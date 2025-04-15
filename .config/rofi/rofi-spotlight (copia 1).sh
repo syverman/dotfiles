@@ -1,1 +1,0 @@
-global/rofi-spotlight (copia 1).sh
