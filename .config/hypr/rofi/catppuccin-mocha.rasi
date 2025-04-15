@@ -7,7 +7,7 @@
     fg-col: #cdd6f4;
     fg-col2: #f38ba8;
     grey: #6c7086;
-    width: 38%;
+    width: 35%;
     font: "JetBrainsMono Nerd Font 13";
 }
 
@@ -17,13 +17,56 @@ element-text, element-icon , mode-switcher {
 }
 
 window {
-    height: 450px;
+    height: 380px;
     border: 2px;
     border-radius: 6px;    
     border-color: @fg-col2;
     background-color: @bg-col;
     orientation: vertical;
     
+}
+prompt {
+    enabled: false;
+}
+
+button {
+    action: "ok";
+    str: " ";
+    font: "FantasqueSansMono Nerd Font 16";
+    expand: false;
+    text-color: #8f8ca1;
+    background-color: @bg-col;
+    vertical-align: 0.5;
+    horizontal-align: 0.5;
+}
+
+entry {
+    font: "Inter Regular 12";
+    background-color: @bg-col;
+    text-color: #8f8ca1;
+    expand: true;
+    vertical-align: 0.5;
+    horizontal-align: 0;
+}
+
+entry-wrapper {
+    orientation: horizontal;
+    margin: 0 12px 0 12px;
+    spacing: 14px;
+    vertical-align: 0.5;
+    background-color: @bg-col;
+    children: [ button, entry ];
+}
+
+inputbar {
+    padding: 5px;
+    margin: 5px 5px 5px 5px;
+    background-color: #26233a;
+    text-color: @fg-col;
+    expand: false;
+    border-radius: 9px;
+    position: north;
+    children: [ entry-wrapper ];
 }
 
 mainbox {
@@ -62,7 +105,7 @@ listview {
     border: 0px 0px 0px;
     padding: 6px 0px 0px;
     margin: 10px 0px 0px 20px;
-    columns: 1;
+    columns: 2;
     lines: 6;
     background-color: @bg-col;
 }

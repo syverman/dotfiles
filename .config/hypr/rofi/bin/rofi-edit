@@ -12,15 +12,15 @@ menu() {
 	printf "6. Starship\n"
 	printf "7. Waybar-Style\n"
 	printf "8. Waybar-Modules\n"
-	printf "9. Mako\n"
+	printf "9. Ranger\n"
 	printf "10. Rofi\n"
 	printf "11. Rofi-Edit\n"
 	printf "12. Zshrc\n"
-	printf "13. Ranger\n"
+	printf "13. Mako\n"
 }
 
 main() {
-	choice=$(menu | rofi -dmenu -theme ~/.config/hypr/rofi/themes/config.rasi | cut -d. -f1)
+	choice=$(menu | rofi -dmenu -theme ~/.config/hypr/rofi/config.rasi | cut -d. -f1)
 
 	case $choice in
 	1)
@@ -48,7 +48,7 @@ main() {
 		$myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/hypr/waybar/modules"
 		;;
 	9)
-		$myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/hypr/mako/config"
+		$myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/ranger/rc.conf"
 		;;
 	10)
 		$myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/rofi/cocnfig.rasi"
@@ -60,7 +60,7 @@ main() {
 		$myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.zshrc"
 		;;
 	13)
-		$myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/ranger/rc.conf"
+		$myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/hypr/mako/config"
 		;;
 
 	esac
