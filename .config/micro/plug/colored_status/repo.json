@@ -1,0 +1,14 @@
+[{
+  "Name": "colored_status",
+  "Description": "Your description of the colored status plugin",
+  "Website": "",
+  "Versions": [
+    {
+      "Version": "0.1.0",
+      "Url": "",
+      "Require": {
+        "micro": ">=2.0.14-1"
+      }
+    }
+  ]
+}]

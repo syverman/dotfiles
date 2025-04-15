@@ -1,0 +1,97 @@
+configuration {
+	modi:					"drun";
+	display-drun: 			"Apps";
+	drun-display-format:    "{name}";
+	font:				    "JetBrains Mono Nerd Font 11";
+	show-icons:              false;
+	click-to-exit: 			 true;
+	icon-theme: 			"Papirus";
+}
+
+@theme "/dev/null"
+
+* {
+	bg:				#171717;
+	fg:				#F7F2E9;
+	red:     		#AE2012;
+    green:   		#67A374;
+    yellow:  		#D1A452;
+    blue:    		#0B5AA3;
+    purple: 		#7460A8;
+    cyan:    		#6CADAD;
+    active:      	#61afef;
+	border: 		#101010;
+	rad:			12px;
+
+	background-color: @bg;
+	text-color:	@fg;
+	border-color: @border;
+}
+
+window {
+	transparency: "real";
+	height: 400px;
+    width: 30%;
+	location: center;
+	x-offset: 0px;
+	y-offset: 15px;
+	border: 0px;
+	border-radius: @rad;
+}
+
+inputbar {
+	children: [ textbox, entry ];
+	expand: false;
+	margin: 15px;
+	border-radius: @rad;
+	background-color: @bg;
+	
+}
+
+textbox {
+    str: "";
+    expand: false;
+    padding: 0 0.5% 0;
+    horizontal-align: 0.5;
+    vertical-align: 0.5;
+    background-color: @red;
+    text-color: @bg;
+    border: 0px;
+    border-radius: 10px;
+    font: "Material Icons 17";
+}
+
+entry{
+	expand: true;
+	padding: 0.5%;
+    placeholder: "Buscar...";
+
+}
+
+listview {
+	columns: 2;
+	lines: 4;
+	cycle: false;
+    margin: 14px;
+}
+
+element {
+	orientation: vertical;
+	padding: 0.2em;
+}
+
+element-text, element-icon {
+	padding: 0.2em;
+	horizontal-align: 0.0;
+	background-color: inherit;
+	text-color: inherit;
+}
+
+element-icon { size: 15px; }
+listview, element, element selected, element-text, element-icon { cursor: pointer; }
+
+element selected {
+	background-color: @cyan;
+	text-color: @bg;
+	border-radius: @rad;
+}
