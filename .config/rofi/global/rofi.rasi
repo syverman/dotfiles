@@ -15,7 +15,7 @@ configuration {
     transparent: #00000000;
     foreground: #F2F2F280;
     background-selected: #F2F2F245;
-    background-active: #F2F2F230;
+    background-active: #1e1e2e;
     background-white: #F2F2F211;
     background-black: #00000080;
     urgent: #E91E6366;
@@ -24,8 +24,8 @@ configuration {
 
 window {
     transparency: "real";
-    background-color: #1917244D;
-    text-color: #8f8ca1;
+    background-color: #1e1e2e;
+    text-color: #cdd6f4;
     location: center;
     anchor: center;
     x-offset: 5px;

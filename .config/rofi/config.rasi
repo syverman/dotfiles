@@ -1,8 +1,10 @@
 configuration{
     modi: "run,window,combi";
-    icon-theme: "Oranchelo";
-    show-icons: false;
+    icon-theme: "Qogir";
+    show-icons: true;
+    matching: "fuzzy";
     terminal: "kitty";
+    click-to-exit: true;
     drun-display-format: "{icon} {name}";
     location: 0;
     disable-history: false;
