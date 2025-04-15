@@ -1,0 +1,5 @@
+#!/bin/sh
+
+hyprctl keyword 'device[elan1200:00-04f3:30ba-touchpad]:enabled' 'false'
+notify-send -u normal "Disabling Touchpad"
+

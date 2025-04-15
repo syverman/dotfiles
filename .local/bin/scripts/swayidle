@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# Configuración para prueba rápida (10 segundos)
+#TIMEOUT=10
+
+# Verificar si swayidle está instalado
+if ! command -v swayidle &> /dev/null; then
+    notify-send -u critical "Error: swayidle no está instalado."
+    exit 1
+fi
+
+# Verificar si swaylock está instalado
+if ! command -v swaylock &> /dev/null; then
+    notify-send -u critical "Error: swaylock no está instalado."
+    exit 1
+fi
+
+# Ejecutar swayidle
+swayidle -w timeout 1800 'swaylock' &
+
+notify-send -u normal "Swayidle iniciado. Bloqueo automático con swaylock en $TIMEOUT segundos."
+
+exit 0
