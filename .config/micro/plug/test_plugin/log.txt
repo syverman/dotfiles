@@ -1,5 +1,0 @@
-2025/04/11 00:11:21 Micro started
-2025/04/11 00:11:21 monokai-dark is not a plugin
-2025/04/11 00:11:21 ONBUFFEROPEN unknown
-2025/04/11 00:11:21 ONBUFFEROPEN unknown
-2025/04/11 00:11:21 ONBUFFEROPEN unknown

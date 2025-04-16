@@ -13,14 +13,15 @@
     "Ctrl-F2": "command:toggleBookmark",
     "CtrlP": "command:palettero",
     "CtrlShift-F2": "command:clearBookmarks",
-    "CtrlShift-h": "command:vsplit",
     "CtrlSpace": "command:lspcompletion",
     "CtrlUnderscore": "lua:comment.comment",
     "F1": "command:cheat",
-    "F12": "command:makeup",
     "F2": "command:nextBookmark",
     "F4": "command:jumptag",
     "F5": "command:runit",
+    "F6": "command:tree",
     "F9": "command:makeupbg",
-    "Shift-F2": "command:prevBookmark"
+    "F12": "command:makeup",
+    "Shift-F2": "command:prevBookmark",
+    "Ctrl-Alt-n": "command:touch filenamehere",
 }
