@@ -50,7 +50,8 @@ export EDITOR=micro
 export VISUAL=micro 
 export BROWSER=thorium-browser
 export TERM=kitty
-export "MICRO_TRUECOLOR=1"
+export COLORTERM=truecolor
+export MICRO_TRUECOLOR=1
 
 # Keybindings
 bindkey -e
