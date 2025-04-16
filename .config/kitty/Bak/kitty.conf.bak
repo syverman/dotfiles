@@ -1723,8 +1723,8 @@ editor micro
 
 #: Paste from clipboard
 
- map kitty_mod+v paste_from_clipboard
-# map cmd+v       paste_from_clipboard
+# map kitty_mod+v paste_from_clipboard
+map cmd+v       paste_from_clipboard
 
 #: Paste from selection
 
