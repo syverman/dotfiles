@@ -1,5 +1,5 @@
 {
-    "aspell.check": "on",
+    "aspell.check": "off",
     "aspell.lang": "us",
     "autosave": 240,
     "colorscheme": "simple",

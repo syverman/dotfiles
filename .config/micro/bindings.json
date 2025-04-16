@@ -8,6 +8,7 @@
     "Alt-r": "command:references",
     "Alt-s": "lua:snippets.Insert",
     "Alt-w": "lua:snippets.Next",
+    "Ctrl-Alt-n": "command:touch filenamehere",
     "Ctrl-Alt-v": "command:vsplit",
     "Ctrl-Alt-z": "command:hsplit",
     "Ctrl-F2": "command:toggleBookmark",
@@ -16,12 +17,11 @@
     "CtrlSpace": "command:lspcompletion",
     "CtrlUnderscore": "lua:comment.comment",
     "F1": "command:cheat",
+    "F12": "command:makeup",
     "F2": "command:nextBookmark",
     "F4": "command:jumptag",
     "F5": "command:runit",
     "F6": "command:tree",
     "F9": "command:makeupbg",
-    "F12": "command:makeup",
-    "Shift-F2": "command:prevBookmark",
-    "Ctrl-Alt-n": "command:touch filenamehere",
+    "Shift-F2": "command:prevBookmark"
 }
