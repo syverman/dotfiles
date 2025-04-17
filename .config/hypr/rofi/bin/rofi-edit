@@ -51,7 +51,7 @@ main() {
 		$myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/ranger/rc.conf"
 		;;
 	10)
-		$myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/rofi/cocnfig.rasi"
+		$myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/rofi/config.rasi"
 		;;
 	11)
 		$myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/hypr/rofi/bin/rofi-edit"
