@@ -1,6 +1,6 @@
 xhost && clear
 fastfetch
-#fastfetch
+
 # Set the directory we want to store zinit and plugins
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 
@@ -34,6 +34,7 @@ zinit light zsh-users/zsh-autosuggestions
 zinit light Aloxaf/fzf-tab
 
 # Add in snippets
+zinit snippet OMZL::git.zsh
 zinit snippet OMZP::git
 zinit snippet OMZP::sudo
 zinit snippet OMZP::archlinux
@@ -43,15 +44,6 @@ zinit snippet OMZP::command-not-found
 autoload -Uz compinit && compinit
 
 zinit cdreplay -q
-
-# variables #
-
-export EDITOR=micro
-export VISUAL=micro 
-export BROWSER=thorium-browser
-export TERM=kitty
-export COLORTERM=truecolor
-export MICRO_TRUECOLOR=1
 
 # Keybindings
 bindkey -e
@@ -78,10 +70,18 @@ zstyle ':completion:*' menu no
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
+# variables #
+export EDITOR=micro
+export VISUAL=micro 
+export BROWSER=thorium-browser
+export TERM=kitty
+export COLORTERM=truecolor
+export MICRO_TRUECOLOR=1
+
 # Alias
 alias cl='clear'
 alias gc='git clone'
-alias ys='yay -S'
+alias yas='yay -S'
 alias update='sudo pacman -Sy'
 alias upgrade='sudo pacman -Syu'
 alias install='sudo pacman -S'
@@ -91,7 +91,7 @@ alias r='ranger'
 alias m='micro'
 alias la='exa -la --color=always --group-directories-first --icons --no-time --no-filesize'
 alias ll='exa -l --color=always --group-directories-first --icons --no-time --no-filesize'
-alias ls='exa --icons --color=always  -X -G -a -s type -F'
+alias ls='exa --icons --color=always   -G -1 -a -s type -F'
 alias lt='exa -T --color=always --group-directories-first --icons'
 alias l.='exa -a | grep -E "^\."'
 alias grep='grep --color=always'
@@ -101,12 +101,11 @@ alias cat='bat'
 alias rate-mirrors='sudo rate-mirrors --disable-comments --top-mirrors-number-to-retest=5 --save /etc/pacman.d/mirrorlist --allow-root arch'
 alias fetch='fastfetch'
 alias buscar='micro $(fzf --preview="bat --color=always {}")'
-#Shell
+
+#Shell change
 alias tobash='sudo chsh $USER -s /bin/bash && echo re-open terminal'
 alias tozsh='sudo chsh $USER -s /bin/zsh && echo re-open terminal'
 alias tofish='sudo chsh $USER -s /bin/fish && echo re-open terminal'
-
-
 
 # Shell integrations
 eval "$(fzf --zsh)"
@@ -121,4 +120,12 @@ export FZF_DEFAULT_OPTS=" \
 # Created by `pipx` on 2023-08-08 21:51:31
 export PATH="$PATH:/home/juancarlos/.local/bin"
 
-# Others
+# yazi
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		builtin cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}
