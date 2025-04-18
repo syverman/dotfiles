@@ -227,6 +227,7 @@ window#waybar.hidden {
 #custom-power_profile {
 	background-color: #313244;
     color: #f0fff7;
+    padding: 2px 12px 2px 8px;
     font-size: 15px;
 }
 

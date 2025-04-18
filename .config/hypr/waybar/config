@@ -25,5 +25,5 @@
  
     "modules-left": ["hyprland/workspaces"],
     "modules-center": [],
-    "modules-right": ["custom/cycle_wall","temperature", "pulseaudio", "backlight", "battery", "network", "clock", "custom/power", "tray"],
+    "modules-right": ["custom/power_profile", "custom/cycle_wall","temperature", "pulseaudio", "backlight", "battery", "network", "clock", "custom/power", "tray"],
 }

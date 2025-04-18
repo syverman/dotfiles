@@ -63,8 +63,8 @@
         "format-alt": "{icon} {time}",
         "format-icons": ["", "", "", "", ""],
         "format-time": "{H}h {M}min",
-        "on-click": "asusctl profile -n; pkill -SIGRTMIN+8 waybar",        
-        "tooltip": false,
+       // "on-click": "asusctl profile -n; pkill -SIGRTMIN+8 waybar",        
+        "tooltip": true,
     },
 
 	// waybar-clock
@@ -110,30 +110,6 @@
          "format": " USED: {used:0.1f}G",
     },
            
-	// waybar-mpd
-    "mpd": {
-        "interval": 2,
-        "unknown-tag": "N/A",
-
-        "format": "{stateIcon} {artist} - {title}",
-        "format-disconnected": " Disconnected",
-        "format-paused": "{stateIcon} {artist} - {title}",
-        "format-stopped": "Stopped ",
-        "state-icons": {
-            "paused": "",
-            "playing": ""
-        },
-        "tooltip-format": "MPD (connected)",
-        "tooltip-format-disconnected": "MPD (disconnected)",
-		// Commands to execute on events
-        "on-click": "mpc toggle",
-        "on-click-middle": "mpc prev",
-        "on-click-right": "mpc next",
-        "on-update": "",
-        "on-scroll-up": "mpc seek +00:00:01",
-        "on-scroll-down": "mpc seek -00:00:01",
-        "smooth-scrolling-threshold": 1,
-    },
 
 	// waybar-network
     "network": {
@@ -149,35 +125,21 @@
         "on-click": "$HOME/.config/hypr/rofi/bin/network_menu",
         "tooltip": false,
     },
-	
-	// weather-custom
-	 "custom/weather": {
-        "format": "{}",
-        "format-alt": "{alt}: {}",
-        "format-alt-click": "click-right",
-        "interval": 1800,
-        "return-type": "json",
-        "exec": "~/.config/hypr/scripts/weather.sh",
-        "exec-if": "ping wttr.in -c1"
-    },
-	
-	// updater-custom
-	"custom/updater":{
-        "format": "  {} ",
-        "exec": "checkupdates | wc -l",
-        "exec-if": "[[ $(checkupdates | wc -l) ]]",
-        "interval": 15,
-        "on-click": "foot -e yay -Syu && notify-send 'The system has been updated' "
-    },
     
     // custom-power-profile
     "custom/power_profile":{
         //shows the current power profile and switches to next on click
         "exec": "asusctl profile -p | sed s:'Active profile is'::",
         "interval": 30,
-        "format": "󰈐 {}", 
+        "format": " {icon}",
+        "format-icons": {
+                "default": " ",
+                "performance": "",
+                "balanced": "",
+                "power-saver": ""
+              },
         "on-click": "asusctl profile -n; pkill -SIGRTMIN+8 waybar",
-        "signal": 8
+        //"signal": 8
     },
     
 	// custom-cycle_wall

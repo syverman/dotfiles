@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <actions>
 <action>
+	<icon>love-wallpaper</icon>
+	<name>Aplicar como fondo de Pantalla</name>
+	<submenu></submenu>
+	<unique-id>1710890103539353-1</unique-id>
+	<command>swaybg -i %f -m fill</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<image-files/>
+</action>
+<action>
 	<icon>utilities-terminal</icon>
 	<name>Open Terminal Here</name>
 	<submenu></submenu>
@@ -112,16 +123,5 @@
 	<directories/>
 	<other-files/>
 	<text-files/>
-</action>
-<action>
-	<icon>love-wallpaper</icon>
-	<name>Set Wallpaper</name>
-	<submenu></submenu>
-	<unique-id>1710890103539353-1</unique-id>
-	<command>swaybg -i %f -m fill</command>
-	<description></description>
-	<range>*</range>
-	<patterns>*</patterns>
-	<image-files/>
 </action>
 </actions>
