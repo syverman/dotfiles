@@ -98,26 +98,6 @@ window#waybar.hidden {
 	color: #242436;
 }
 
-/** ********** MPD ********** **/
-#mpd {
-	background-color: #313244;
-}
-
-#mpd.disconnected {
-	background-color: #313244;
-}
-
-#mpd.stopped {
-	background-color: #313244;
-}
-
-#mpd.playing {
-	background-color: #313244;
-}
-
-#mpd.paused {
-}
-
 /** ********** Pulseaudio ********** **/
 #pulseaudio {
 	background-color: #313244;
@@ -197,20 +177,6 @@ window#waybar.hidden {
 	font-size: 15px;
 }
 
-#custom-updater {
-	background-color: #313244;
-	margin-right: 6px;
-	padding: 2px 8px;
-	font-size: 12px;
-}
-
-#custom-weather {
-	background-color: #313244;
-	margin-right: 6px;
-	padding: 2px 8px;
-	font-size: 12px;
-}
-
 #tray {
 	margin-right: 8px;
 	margin-left: -8px;
@@ -226,7 +192,7 @@ window#waybar.hidden {
 
 #custom-power_profile {
 	background-color: #313244;
-    color: #f0fff7;
+    color: #27e327;
     padding: 2px 12px 2px 8px;
     font-size: 15px;
 }
@@ -239,7 +205,6 @@ window#waybar.hidden {
 #disk,
 #mode,
 #memory,
-#mpd,
 #temperature,
 #pulseaudio,
 #network {
