@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 ## Autostart Programs
-DIR=/home/juancarlos/Imágenes/Fondos/
+DIR=/home/juancarlos/Imágenes/Walls/
 PICS=($(ls ${DIR}))
 
 RANDOMPICS=${PICS[ $RANDOM % ${#PICS[@]} ]}
