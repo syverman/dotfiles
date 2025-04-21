@@ -4,11 +4,12 @@
 /* ---- Configuration ---- */ 
 configuration {
   modi: "drun";
+  drun-display-format: "{icon}";
 }
 
 window {
-  width: 75%;
-  height: inherit;
+  width: 80%;
+  height: 80%;
 }
 
 /* ---- Mainbox ---- */
@@ -26,12 +27,12 @@ entry {
 
 /* ---- Listview ---- */
 listview {
-  columns: 4;
-  lines: 3;
-  spacing: 20px;
-  padding: 10px;
-  columns: 4;
-  lines: 3;
+  columns: 5;
+  lines: 4;
+  spacing: 10px;
+  padding: 15px 12px 0px 0px;
+  columns: 5;
+  lines: 4;
   flow: horizontal;
   fixed-width: true;
   fixed-height: true;
