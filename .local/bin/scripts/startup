@@ -20,19 +20,15 @@ done
 # Set wallpaper
 swaybg --output '*' --mode fill -i ${DIR}/${RANDOMPICS} &
 
-# Apply themes
-#~/.local/bin/scripts/gtkthemes &
-
 # Lauch notification daemon (mako)
 ~/.local/bin/scripts/notifications &
 
 # Lauch statusbar (waybar)
 ~/.local/bin/scripts/statusbar &
 
-# Auto inicio de programas 
+# Auto inicio de programas
+# Using hypridle to start hyprlock 
 exec hypridle &
-# Start mpd
-# exec mpd &
 
 #Start mailspring
 # exec mailspring -S &
