@@ -99,7 +99,7 @@ alias sozh='source .zshrc'
 alias sosh='source .bashrc'
 alias cat='bat'
 alias rate-mirrors='sudo rate-mirrors --disable-comments --top-mirrors-number-to-retest=5 --save /etc/pacman.d/mirrorlist --allow-root arch'
-alias fetch='fastfetch'
+alias ff='fastfetch'
 alias buscar='micro $(fzf --preview="bat --color=always {}")'
 
 #Shell change
