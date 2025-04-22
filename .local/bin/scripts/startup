@@ -7,7 +7,7 @@ PICS=($(ls ${DIR}))
 RANDOMPICS=${PICS[ $RANDOM % ${#PICS[@]} ]}
 
 # Kill already running process
-_ps=(waybar mako mpd polkit-gnome swaybg)
+_ps=(waybar polkit-gnome swaybg)
 for _prs in "${_ps[@]}"; do
 	if [[ `pidof ${_prs}` ]]; then
 		killall -9 ${_prs}
@@ -21,7 +21,9 @@ done
 swaybg --output '*' --mode fill -i ${DIR}/${RANDOMPICS} &
 
 # Lauch notification daemon (mako)
-~/.local/bin/scripts/notifications &
+# ~/.local/bin/scripts/notifications &
+
+exec swaync &
 
 # Lauch statusbar (waybar)
 ~/.local/bin/scripts/statusbar &
@@ -30,8 +32,6 @@ swaybg --output '*' --mode fill -i ${DIR}/${RANDOMPICS} &
 # Using hypridle to start hyprlock 
 exec hypridle &
 
-#Start mailspring
-# exec mailspring -S &
 
 #Start whatsapp-for-linux
 # exec whatsapp-for-linux -S &
