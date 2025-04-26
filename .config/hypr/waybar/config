@@ -23,6 +23,6 @@
     "ipc": true,
  
     "modules-left": ["hyprland/workspaces"],
-    "modules-center": [],
-    "modules-right": ["custom/power_profile", "custom/cycle_wall","temperature", "pulseaudio", "backlight", "battery", "network", "clock", "custom/power", "tray"],
+    "modules-center": ["clock"],
+    "modules-right": ["custom/power_profile", "custom/cycle_wall","temperature", "pulseaudio", "backlight", "battery", "network", "custom/power", "tray"],
 }
