@@ -7,7 +7,7 @@ PICS=($(ls ${DIR}))
 RANDOMPICS=${PICS[ $RANDOM % ${#PICS[@]} ]}
 
 # Kill already running process
-_ps=(waybar polkit-gnome swaybg)
+_ps=(waybar polkit-gnome)
 for _prs in "${_ps[@]}"; do
 	if [[ `pidof ${_prs}` ]]; then
 		killall -9 ${_prs}
@@ -18,7 +18,7 @@ done
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
 # Set wallpaper
-swaybg --output '*' --mode fill -i ${DIR}/${RANDOMPICS} &
+# swaybg --output '*' --mode fill -i ${DIR}/${RANDOMPICS} &
 
 # Lauch notification daemon (mako)
 # ~/.local/bin/scripts/notifications &
