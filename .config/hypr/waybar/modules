@@ -73,8 +73,8 @@
 		"rotate": 0,
         "timezone": "America/Santiago",
         //"tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>",
-        "format": "  {:%H:%M}",
-        "format-alt": " {:%A %d %B, %G}",
+        "format": "{:L%a %d - %H:%M}",
+        "format-alt": " {:L%A %d %B, %G}",
         "tooltip": false,
     },
 
@@ -194,5 +194,14 @@
     "tray": {
         "icon-size": 17,
         "spacing": 10
-    }
+    },
+    // clock-date
+    "custom/formatted_date": {
+            "exec": "$HOME/.local/bin/scripts/formatted_date.py",
+            "interval": 60,
+            "tooltip": false,
+            "on-click": "evolution --component=calendar"
+            // Puedes añadir estilos específicos para este módulo aquí
+            // "class": "formatted-date-module"
+        }
 }

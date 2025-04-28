@@ -147,7 +147,7 @@ window#waybar.hidden {
 }
 
 /** ********** Custom ********** **/
-#custom-menu, #custom-power, #custom-weather, #custom-updater, #tray, #custom-cycle_wall, #custom-power_profile {
+#custom-menu, #custom-power, #custom-weather, #custom-updater, #tray, #custom-cycle_wall, #custom-power_profile, #custom-formatted_date {
 	border-radius: 3px;
 	margin: 6px 0px;
 	padding: 2px 8px;
@@ -197,6 +197,11 @@ window#waybar.hidden {
     color: #27e327;
     padding: 0px 10px 0px 8px;
     font-size: 15px;
+}
+
+#custom-formatted_date {
+	background-color: #1e1e2e;
+	color: #f77a2d;
 }
 
 /** Common style **/
