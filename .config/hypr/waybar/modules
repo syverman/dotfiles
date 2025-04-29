@@ -19,8 +19,10 @@
         "on-scroll-down": "light -U 5%",
         "smooth-scrolling-threshold": 1,
         "tootltip": false,
+        "on-click": "control -dm",
+
     },
-	
+
 	"hyprland/workspaces": {
 	"format": "{icon}",
 	"active-only": false,
@@ -40,7 +42,7 @@
 
 	}
   },
-	
+
 	// waybar-battery
     "battery": {
 		"interval": 60,
@@ -63,6 +65,7 @@
         "format-alt": "{icon} {time}",
         "format-icons": ["", "", "", "", ""],
         "format-time": "{H}h {M}min",
+        "on-click": "control -Bm",
         "tooltip": true,
     },
 
@@ -83,7 +86,7 @@
          "interval": 5,
          "format": " LOAD: {usage}%",
     },
-           
+
 	// waybar-custom
     "custom/menu": {
          "format": "   ",
@@ -101,14 +104,14 @@
     "disk": {
          "interval": 30,
          "format": " Libre: {free}",
-    },           	
-	
+    },
+
 	// waybar-memory
     "memory": {
          "interval": 10,
          "format": " USED: {used:0.1f}G",
     },
-           
+
 
 	// waybar-network
     "network": {
@@ -121,10 +124,11 @@
         "format-disabled": "睊 Disabled",
        // "format-alt": " {bandwidthUpBits} |  {bandwidthDownBits}",
         "tooltip-format": "  {essid}",
-        "on-click": "$HOME/.local/bin/scripts/network_menu",
+       // "on-click": "$HOME/.local/bin/scripts/network_menu",
+        "on_click": "control -wm",
         "tooltip": true,
     },
-    
+
     // custom-power-profile
     "custom/power_profile":{
         //shows the current power profile and switches to next on click
@@ -140,7 +144,7 @@
         "on-click": "asusctl profile -n; pkill -SIGRTMIN+8 waybar",
         //"signal": 8
     },
-    
+
 	// custom-cycle_wall
     "custom/cycle_wall":{
        "format": " ",
@@ -149,14 +153,11 @@
     },
 
 	// waybar-pulseaudio
-    "pulseaudio": {
-       // "format": "{volume}% {icon} {format_source}",
+"pulseaudio": {
         "format": "{icon} {volume}%",
         "format-muted": " Mute",
-        "format-bluetooth": " {volume}% {format_source}",
+        "format-bluetooth": " {volume}%",
         "format-bluetooth-muted": " Mute",
-        "format-source": " {volume}%",
-        "format-source-muted": "",
         "format-icons": {
             "headphone": "",
             "hands-free": "",
@@ -164,15 +165,14 @@
             "phone": "",
             "portable": "",
             "car": "",
-            "default": ["", "", ""],
-            "tooltip": false,
+            "default": ["", "", ""]
         },
         "scroll-step": 5.0,
-		// Commands to execute on events
-        "on-click": "pamixer -t",
-        "on-click-right": "pavucontrol",
-        "smooth-scrolling-threshold": 1,
+        "on-click": "pamixer -t && wpctl set-mute @DEFAULT_SOURCE@ 0",
+        "on-click-right": "control -Vm",
+        "smooth-scrolling-threshold": 1
     },
+
     // hyprland-window
     "hyprland/window": {
         "format": "{}"
@@ -195,6 +195,7 @@
         "icon-size": 17,
         "spacing": 10
     },
+
     // clock-date
     "custom/formatted_date": {
             "exec": "$HOME/.local/bin/scripts/formatted_date.py",
@@ -203,5 +204,38 @@
             "on-click": "evolution --component=calendar"
             // Puedes añadir estilos específicos para este módulo aquí
             // "class": "formatted-date-module"
-        }
+        },
+
+    "pulseaudio#microphone": {
+        "format-source": " {volume}%",
+        "format-source-muted": " ",
+        "format": "{format_source}",
+        "source": true,
+        "scroll-step": 5,
+        "smooth-scrolling-threshold": 1,
+        "icons": {
+            "default": "",
+            "muted": " "
+        },
+        "on-click": "pamixer --default-source --toggle-mute",
+        "on-click-right": "pavucontrol -t 4",
+        "on-scroll-up": "pamixer --default-source --increase 5",
+        "on-scroll-down": "pamixer --default-source --decrease 5"
+
+    },
+
+    "bluetooth": {
+        "format": " {status}",
+        "format-connected": " {device_alias}",
+        "format-on": " On",
+        "format-off": " Off",
+        "format-disabled": "", // Oculta si está deshabilitado
+        "format-no-controller": "", // Oculta si no hay controlador
+        "tooltip-format": "{controller_alias}\t{controller_address}",
+        "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+        "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+        "on-click": "blueman-manager",
+        "tooltip": true
+    }
+
 }
