@@ -14,7 +14,7 @@ except locale.Error:
 now = datetime.datetime.now()
 
 # Formatear la fecha y hora en español
-formatted_string = now.strftime('%A %d - %H:%M')
+formatted_string = now.strftime('%A %d | %H:%M')
 
 # Separar el nombre del día del resto del string
 parts = formatted_string.split(' ', 1)
