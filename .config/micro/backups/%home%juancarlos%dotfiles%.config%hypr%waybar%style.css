@@ -82,7 +82,7 @@
   /** ********** Individual Module Colors & Specific Styles ********** **/
   
   #backlight {
-	  color: #ff6eb9;
+	  color: #ff61b3;
   }
   
   #battery {
@@ -132,20 +132,11 @@
   }
   
   #bluetooth {
-	  color: #b9c2f4;
-  }
-  #bluetooth.connected {
-	  color: #2ba9fc;
-  }
-  #bluetooth.disconnected {
-	  color: #9f5b7b;
-  }
-  #bluetooth.off{
-	  color: #9e886c;
+	  color: ;
   }
   
   #temperature {
-	  color: #ca9ee6;
+	  color: #b980ff;
   }
   
   #custom-cycle_wall {

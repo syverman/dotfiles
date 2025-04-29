@@ -229,12 +229,14 @@
         "format-connected": " {device_alias}",
         "format-on": " On",
         "format-off": " Off",
-        "format-disabled": "", // Oculta si está deshabilitado
+       // "format-disabled": "", // Oculta si está deshabilitado
         "format-no-controller": "", // Oculta si no hay controlador
-        "tooltip-format": "{controller_alias}\t{controller_address}",
+        "tooltip-format": "{controller_alias}",
         "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
         "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
-        "on-click": "blueman-manager",
+        "on-click": "bluetoothctl power on",
+        "on-click-middle": "control -bm",
+        "on-click-right": "bluetoothctl power off",
         "tooltip": true
     }
 
