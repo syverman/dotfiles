@@ -129,20 +129,16 @@
         "tooltip": true,
     },
 
-    // custom-power-profile
-    "custom/power_profile":{
-        //shows the current power profile and switches to next on click
-        "exec": "asusctl profile -p | sed s:'Active profile is'::",
-        "interval": 30,
-        "format": " {icon}",
-        "format-icons": {
-                "default": " ",
-                "performance": "",
-                "balanced": "",
-                "power-saver": ""
-              },
-        "on-click": "asusctl profile -n; pkill -SIGRTMIN+8 waybar",
-        //"signal": 8
+    "power-profiles-daemon": {
+      "format": "{icon}",
+      "tooltip-format": "Power profile: {profile}",
+      "tooltip": true,
+      "format-icons": {
+        "default": "",
+        "performance": " ",
+        "balanced": "",
+        "power-saver": " "
+      }
     },
 
 	// custom-cycle_wall
@@ -153,7 +149,7 @@
     },
 
 	// waybar-pulseaudio
-"pulseaudio": {
+        "pulseaudio": {
         "format": "{icon} {volume}%",
         "format-muted": " Mute",
         "format-bluetooth": " {volume}%",

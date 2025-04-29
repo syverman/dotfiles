@@ -37,7 +37,7 @@
   #custom-power,
   #temperature,
   #custom-cycle_wall,
-  #custom-power_profile,
+  #power-profiles-daemon,
   #custom-formatted_date {
 	  background-color: #1e1e2e;
   }
@@ -106,7 +106,7 @@
   }
   
   #clock, #custom-formatted_date {
-	  color: #f77a2d;
+	  color: #df8e1d;
   }
   
   #pulseaudio {
@@ -155,11 +155,29 @@
 	  padding: 0px 8px 0px 12px;
   }
   
-  #custom-power_profile {
-	  color: #27e327;
+  #power-profile-daemon {
+    border-radius: 3px;
+  }
+
+  #power-profiles-daemon.performance {;
+    color: #8bd5ca;
 	  border-radius: 3px;
 	  margin: 2px 0px;
-	  padding: 0px 10px 0px 8px;
+	  padding: 0px 16px 0px 2px;
+  }
+
+  #power-profiles-daemon.balanced {
+    color: #ee99a0;
+	  border-radius: 3px;
+	  margin: 2px 0px;
+	  padding: 0px 17px 0px 10px;
+  }
+
+  #power-profiles-daemon.power-saver {
+    color: #27e327;
+	  border-radius: 3px;
+	  margin: 2px 0px;
+	  padding: 0px 16px 0px 2px;
   }
   
   #custom-menu {

@@ -24,6 +24,6 @@
  
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["custom/formatted_date"],
-    "modules-right": ["custom/power_profile", "custom/cycle_wall","temperature", "pulseaudio", "backlight", "battery", "bluetooth", "network", "custom/power", "tray"]
+    "modules-right": ["custom/cycle_wall","temperature", "pulseaudio", "backlight", "battery", "bluetooth", "power-profiles-daemon", "network", "custom/power", "tray"]
 
 }
