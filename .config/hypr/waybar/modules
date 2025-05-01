@@ -125,7 +125,7 @@
        // "format-alt": " {bandwidthUpBits} |  {bandwidthDownBits}",
         "tooltip-format": "  {essid}",
        // "on-click": "$HOME/.local/bin/scripts/network_menu",
-        "on_click": "control -wm",
+        "on-click": "control -wm",
         "tooltip": true,
     },
 
@@ -188,8 +188,8 @@
 
 	// waybar-tray
     "tray": {
-        "icon-size": 17,
-        "spacing": 10
+        "icon-size": 22,
+        "spacing": 8
     },
 
     // clock-date
@@ -231,7 +231,7 @@
         "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
         "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
         "on-click": "bluetoothctl power on",
-        "on-click-middle": "control -bm",
+        "on-click-middle": "blueman-manager",
         "on-click-right": "bluetoothctl power off",
         "tooltip": true
     }
