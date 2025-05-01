@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <actions>
 <action>
-	<icon>love-wallpaper</icon>
+	<icon>view-preview</icon>
 	<name>Aplicar como fondo de Pantalla</name>
 	<submenu></submenu>
 	<unique-id>1710890103539353-1</unique-id>
@@ -12,7 +12,7 @@
 	<image-files/>
 </action>
 <action>
-	<icon>utilities-terminal</icon>
+	<icon>window-next</icon>
 	<name>Open Terminal Here</name>
 	<submenu></submenu>
 	<unique-id>1488955845049151-1</unique-id>
@@ -24,7 +24,7 @@
 	<directories/>
 </action>
 <action>
-	<icon>numix-folders</icon>
+	<icon>folder-edit-sign-encrypt</icon>
 	<name>Open folder as root</name>
 	<submenu></submenu>
 	<unique-id>1493475601060449-3</unique-id>
@@ -35,7 +35,7 @@
 	<directories/>
 </action>
 <action>
-	<icon>text-editor</icon>
+	<icon>story-editor</icon>
 	<name>Open in micro</name>
 	<submenu></submenu>
 	<unique-id>1691182030475283-1</unique-id>
@@ -46,7 +46,7 @@
 	<text-files/>
 </action>
 <action>
-	<icon>armoryicon</icon>
+	<icon>debug-run</icon>
 	<name>Make executable</name>
 	<submenu></submenu>
 	<unique-id>1526670239648084-2</unique-id>
@@ -74,7 +74,7 @@
 	<video-files/>
 </action>
 <action>
-	<icon>system-switch-user</icon>
+	<icon>im-user-online</icon>
 	<name>Ownership to user</name>
 	<submenu></submenu>
 	<unique-id>1526631178674034-9</unique-id>
@@ -90,7 +90,7 @@
 	<video-files/>
 </action>
 <action>
-	<icon>peazip</icon>
+	<icon>archive-extract</icon>
 	<name>Extract here</name>
 	<submenu></submenu>
 	<unique-id>1489091300385082-4</unique-id>
@@ -101,7 +101,7 @@
 	<other-files/>
 </action>
 <action>
-	<icon>system-reboot</icon>
+	<icon>edit-image-face-recognize</icon>
 	<name>Convert png to jpg</name>
 	<submenu></submenu>
 	<unique-id>1510662686010963-1</unique-id>
