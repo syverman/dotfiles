@@ -44,17 +44,17 @@ notify_user() {
 # Increase Volume
 inc_volume() {
     if [ "$(pamixer --get-mute)" == "true" ]; then
-        pamixer -u && notify_user
+        pamixer -u 
     fi
-    pamixer -i 5 && notify_user
+    pamixer -i 5 
 }
 
 # Decrease Volume
 dec_volume() {
     if [ "$(pamixer --get-mute)" == "true" ]; then
-        pamixer -u && notify_user
+        pamixer -u 
     fi
-    pamixer -d 5 && notify_user
+    pamixer -d 5 
 }
 
 # Toggle Mute
