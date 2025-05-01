@@ -1,0 +1,148 @@
+{
+  "theme.font.name": "JetBrains Mono",
+  "theme.font.label": "JetBrains Mono",
+  "theme.font.size": "0.9rem",
+  "theme.font.weight": 600,
+  "tear": true,
+  "menus.transition": "crossfade",
+  "theme.bar.menus.enableShadow": true,
+  "theme.bar.floating": true,
+  "theme.bar.buttons.enableBorders": true,
+  "theme.bar.enableShadow": false,
+  "theme.bar.shadow": "0px 1px 1px 1px #16161e",
+  "bar.launcher.autoDetectIcon": true,
+  "theme.bar.buttons.dashboard.enableBorder": false,
+  "theme.bar.buttons.workspaces.enableBorder": false,
+  "bar.workspaces.show_icons": false,
+  "bar.workspaces.show_numbered": false,
+  "bar.workspaces.showWsIcons": true,
+  "bar.workspaces.showApplicationIcons": true,
+  "theme.bar.buttons.workspaces.pill.active_width": "12em",
+  "theme.bar.buttons.workspaces.pill.width": "4em",
+  "theme.bar.buttons.workspaces.fontSize": "1.1em",
+  "theme.bar.buttons.windowtitle.enableBorder": false,
+  "bar.workspaces.applicationIconFallback": "󰣆",
+  "theme.bar.buttons.volume.enableBorder": false,
+  "bar.volume.rightClick": "control -Vm",
+  "bar.network.showWifiInfo": true,
+  "bar.network.truncation_size": 13,
+  "bar.network.rightClick": "control -wm",
+  "bar.bluetooth.rightClick": "control -bm",
+  "bar.battery.rightClick": "control -Bm",
+  "theme.bar.buttons.systray.enableBorder": false,
+  "bar.clock.format": "%a %d %b |   %H:%M",
+  "theme.bar.buttons.clock.spacing": "0.7em",
+  "bar.notifications.show_total": true,
+  "theme.osd.duration": 1000,
+  "notifications.timeout": 6150,
+  "notifications.ignore": [],
+  "theme.osd.orientation": "horizontal",
+  "theme.osd.location": "bottom",
+  "theme.osd.margins": "7px 7px 40px 7px",
+  "theme.osd.enableShadow": true,
+  "theme.osd.shadow": "0px 0px 2px 1px #16161e",
+  "theme.osd.muted_zero": true,
+  "menus.clock.time.military": true,
+  "menus.clock.time.hideSeconds": true,
+  "menus.clock.weather.location": "3130000",
+  "menus.clock.weather.unit": "metric",
+  "menus.clock.weather.key": "",
+  "menus.clock.weather.enabled": false,
+  "menus.dashboard.powermenu.avatar.image": "/home/juancarlos/Imágenes/UserImage.jpg",
+  "theme.bar.menus.menu.dashboard.profile.size": "10em",
+  "menus.dashboard.shortcuts.left.shortcut1.icon": "",
+  "menus.dashboard.shortcuts.left.shortcut1.command": "thorium-browser",
+  "menus.dashboard.shortcuts.left.shortcut1.tooltip": "Thorium",
+  "menus.dashboard.shortcuts.left.shortcut2.icon": "",
+  "menus.dashboard.shortcuts.left.shortcut2.command": "",
+  "menus.dashboard.shortcuts.left.shortcut2.tooltip": "",
+  "menus.dashboard.shortcuts.left.shortcut3.icon": "",
+  "menus.dashboard.shortcuts.left.shortcut3.command": "",
+  "menus.dashboard.shortcuts.left.shortcut3.tooltip": "",
+  "menus.dashboard.directories.left.directory1.command": "thunar \"Descargas/\"",
+  "menus.dashboard.directories.left.directory3.command": "thunar \"dotfiles/\"",
+  "menus.dashboard.directories.left.directory3.label": "󰚝 dotfiles",
+  "menus.dashboard.directories.left.directory2.command": "thunar \"Videos/\"",
+  "menus.dashboard.directories.left.directory1.label": "󰉍 Descargas",
+  "menus.dashboard.directories.right.directory1.label": "󱧶 Documentos",
+  "menus.dashboard.directories.right.directory1.command": "thunar \"Documentos/\"",
+  "menus.dashboard.directories.right.directory2.command": "thunar \"Imágenes/\"",
+  "menus.dashboard.directories.right.directory3.command": "thunar",
+  "menus.dashboard.directories.right.directory2.label": "󰉏 Imágenes",
+  "theme.bar.buttons.modules.microphone.enableBorder": false,
+  "theme.bar.buttons.modules.cpuTemp.enableBorder": false,
+  "bar.customModules.cpuTemp.sensor": "",
+  "theme.bar.buttons.modules.storage.enableBorder": false,
+  "theme.bar.buttons.modules.kbLayout.enableBorder": false,
+  "bar.customModules.kbLayout.labelType": "code",
+  "theme.bar.buttons.modules.updates.enableBorder": false,
+  "bar.customModules.updates.pollingInterval": 1440000,
+  "theme.bar.buttons.modules.weather.enableBorder": false,
+  "bar.customModules.weather.unit": "metric",
+  "theme.bar.buttons.modules.hypridle.enableBorder": true,
+  "theme.bar.buttons.modules.power.enableBorder": false,
+  "menus.power.lowBatteryNotification": true,
+  "theme.bar.transparent": true,
+  "theme.bar.buttons.monochrome": false,
+  "theme.bar.border.width": "0.15em",
+  "theme.bar.border.location": "none",
+  "bar.layouts": {
+    "0": {
+      "left": [
+        "dashboard",
+        "workspaces",
+        "windowtitle"
+      ],
+      "middle": [
+        "clock"
+      ],
+      "right": [
+        "volume",
+        "network",
+        "bluetooth",
+        "battery",
+        "systray",
+        "notifications"
+      ]
+    },
+    "1": {
+      "left": [
+        "dashboard",
+        "workspaces",
+        "windowtitle"
+      ],
+      "middle": [
+        "media"
+      ],
+      "right": [
+        "volume",
+        "clock",
+        "notifications"
+      ]
+    },
+    "2": {
+      "left": [
+        "dashboard",
+        "workspaces",
+        "windowtitle"
+      ],
+      "middle": [
+        "media"
+      ],
+      "right": [
+        "volume",
+        "clock",
+        "notifications"
+      ]
+    }
+  },
+  "wallpaper.pywal": false,
+  "theme.bar.menus.monochrome": false,
+  "theme.bar.menus.card_radius": "0.2em",
+  "theme.bar.menus.popover.radius": "0.4em",
+  "theme.bar.menus.shadow": "0px 0px 1px 1px #16161e",
+  "theme.bar.buttons.borderSize": "0.1em",
+  "theme.bar.margin_top": "0.1em",
+  "theme.bar.margin_sides": "0.1em",
+  "theme.bar.dropdownGap": "2.5em"
+}
