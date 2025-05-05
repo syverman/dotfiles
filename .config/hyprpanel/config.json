@@ -1,8 +1,8 @@
 {
-  "theme.font.name": "JetBrains Mono",
-  "theme.font.label": "JetBrains Mono",
+  "theme.font.name": "JetBrainsMono Nerd Font",
+  "theme.font.label": "JetBrainsMono Nerd Font Semi-Bold",
   "theme.font.size": "0.9rem",
-  "theme.font.weight": 600,
+  "theme.font.weight": 800,
   "tear": true,
   "menus.transition": "crossfade",
   "theme.bar.menus.enableShadow": true,
@@ -115,26 +115,14 @@
         "windowtitle"
       ],
       "middle": [
-        "media"
+        "clock"
       ],
       "right": [
         "volume",
-        "clock",
-        "notifications"
-      ]
-    },
-    "2": {
-      "left": [
-        "dashboard",
-        "workspaces",
-        "windowtitle"
-      ],
-      "middle": [
-        "media"
-      ],
-      "right": [
-        "volume",
-        "clock",
+        "network",
+        "bluetooth",
+        "battery",
+        "systray",
         "notifications"
       ]
     }
@@ -543,5 +531,13 @@
   "theme.bar.outer_spacing": "0.5em",
   "theme.bar.buttons.y_margins": "0.3em",
   "bar.scrollSpeed": 10,
-  "theme.bar.buttons.separator.margins": "0.15em"
+  "theme.bar.buttons.separator.margins": "0.15em",
+  "scalingPriority": "both",
+  "theme.bar.scaling": 100,
+  "theme.tooltip.scaling": 95,
+  "theme.bar.menus.menu.power.scaling": 90,
+  "theme.bar.menus.menu.dashboard.scaling": 90,
+  "theme.notification.scaling": 95,
+  "theme.bar.menus.menu.notifications.scaling": 95,
+  "bar.windowtitle.label": true
 }
