@@ -104,8 +104,8 @@
         "network",
         "bluetooth",
         "battery",
-        "systray",
-        "notifications"
+        "notifications",
+        "systray"
       ]
     },
     "1": {
