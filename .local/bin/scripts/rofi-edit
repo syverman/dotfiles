@@ -1,6 +1,6 @@
 #!/bin/bash
 
-myTerm=kitty
+myTerm=ghostty #myTerm=ghostty
 myEdit=micro
 
 menu() {
@@ -12,7 +12,7 @@ menu() {
 	printf "6. Starship\n"
 	printf "7. Waybar-Style\n"
 	printf "8. Waybar-Modules\n"
-#	printf "9. Ranger\n"
+	printf "9. Ghostty\n"
 	printf "10. Rofi\n"
 	printf "11. Rofi-Edit\n"
 	printf "12. Zshrc\n"
@@ -48,13 +48,13 @@ main() {
 		$myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/hypr/waybar/modules"
 		;;
 	9)
-		$myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/ranger/rc.conf"
+		$myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/ghostty/config"
 		;;
 	10)
 		$myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/rofi/config.rasi"
 		;;
 	11)
-		$myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/hypr/rofi/bin/rofi-edit"
+		$myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.local/bin/scripts/rofi-edit"
 		;;
 	12)
 		$myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.zshrc"
