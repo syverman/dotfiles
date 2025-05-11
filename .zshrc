@@ -135,3 +135,5 @@ function y() {
 	fi
 	rm -f -- "$tmp"
 }
+
+source ~/.zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh
