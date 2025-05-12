@@ -26,18 +26,20 @@ elif [[ "$1" == '--reboot' ]]; then
 elif [[ "$1" == '--hibernate' ]]; then
 	cdialog
 	if [[ "$?" == 0 ]]; then
+		# hypridle's before_sleep_cmd will handle locking
 		systemctl hibernate
     else
 		exit
     fi
 elif [[ "$1" == '--lock' ]]; then
+	# This is for manual locking, separate from hypridle's idle lock
 	~/.config/hypr/scripts/lockscreen
 elif [[ "$1" == '--suspend' ]]; then
 	cdialog
 	if [[ "$?" == 0 ]]; then
 		mpc -q pause
 		amixer set Master mute
-		~/.config/hypr/scripts/lockscreen
+		# hypridle's before_sleep_cmd will handle locking
 		systemctl suspend
     else
 		exit
