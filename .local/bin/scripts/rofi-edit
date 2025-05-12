@@ -1,6 +1,7 @@
 #!/bin/bash
 
-myTerm=ghostty #myTerm=ghostty
+# myTerm=kitty 
+myTerm=kitty
 myEdit=micro
 
 menu() {
