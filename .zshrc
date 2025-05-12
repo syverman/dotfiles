@@ -75,6 +75,7 @@ export EDITOR=micro
 export VISUAL=micro 
 export BROWSER=thorium-browser
 export TERM=kitty
+# export TERM=ghostty
 export COLORTERM=truecolor
 export MICRO_TRUECOLOR=1
 

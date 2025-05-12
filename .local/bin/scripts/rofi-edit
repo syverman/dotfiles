@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# myTerm=kitty 
+# myTerm=ghostty 
 myTerm=kitty
 myEdit=micro
 
