@@ -2,7 +2,7 @@
 
 # myTerm=ghostty 
 myTerm=kitty
-myEdit=micro
+myEdit=nvim
 
 menu() {
 	printf "1. Hyprland\n"
