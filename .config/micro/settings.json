@@ -2,7 +2,7 @@
     "aspell.check": "off",
     "aspell.lang": "us",
     "autosave": 240,
-    "colorscheme": "simple",
+    "colorscheme": "catppuccin",
     "lsp.autocompleteDetails": true,
     "lsp.ignoreMessages": "LS message1 to ignore|LS message 2 to ignore|...",
     "lsp.ignoreTriggerCharacters": "completion,signature",
