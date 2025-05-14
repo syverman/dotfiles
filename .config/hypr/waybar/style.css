@@ -1,5 +1,4 @@
 /* 
- * Copyright (C) 2020-2022 Aditya Shakya <adi1090x@gmail.com>
 */
 
 /** ********** Fonts ********** **/
@@ -37,7 +36,7 @@
   #custom-power,
   #temperature,
   #custom-cycle_wall,
-  #power-profiles-daemon,
+  #custom-power_profile,
   #custom-formatted_date {
 	  background-color: #1e1e2e;
   }
@@ -82,7 +81,7 @@
   /** ********** Individual Module Colors & Specific Styles ********** **/
   
   #backlight {
-	  color: #ff6eb9;
+	  color: #ff61b3;
   }
   
   #battery {
@@ -106,7 +105,7 @@
   }
   
   #clock, #custom-formatted_date {
-	  color: #df8e1d;
+	  color: #f77a2d;
   }
   
   #pulseaudio {
@@ -132,20 +131,11 @@
   }
   
   #bluetooth {
-	  color: #b9c2f4;
-  }
-  #bluetooth.connected {
-	  color: #2ba9fc;
-  }
-  #bluetooth.disconnected {
-	  color: #9f5b7b;
-  }
-  #bluetooth.off{
-	  color: #9e886c;
+	  color: ;
   }
   
   #temperature {
-	  color: #ca9ee6;
+	  color: #b980ff;
   }
   
   #custom-cycle_wall {
@@ -155,29 +145,11 @@
 	  padding: 0px 8px 0px 12px;
   }
   
-  #power-profile-daemon {
-    border-radius: 3px;
-  }
-
-  #power-profiles-daemon.performance {;
-    color: #8bd5ca;
+  #custom-power_profile {
+	  color: #27e327;
 	  border-radius: 3px;
 	  margin: 2px 0px;
-	  padding: 0px 16px 0px 2px;
-  }
-
-  #power-profiles-daemon.balanced {
-    color: #ee99a0;
-	  border-radius: 3px;
-	  margin: 2px 0px;
-	  padding: 0px 17px 0px 10px;
-  }
-
-  #power-profiles-daemon.power-saver {
-    color: #27e327;
-	  border-radius: 3px;
-	  margin: 2px 0px;
-	  padding: 0px 16px 0px 2px;
+	  padding: 0px 10px 0px 8px;
   }
   
   #custom-menu {
@@ -195,7 +167,7 @@
 	  margin-right: 8px;
 	  margin-left: -1px;
 	  padding: 0px 10px 0px 10px;
-	  font-size: 23px;
+	  font-size: 20px;
   }
   
   #tray {

@@ -1,70 +1,70 @@
 #!/bin/bash
 
-# myTerm=ghostty 
+# myTerm=ghostty
 myTerm=kitty
-myEdit=nvim
+myEdit=micro
 
 menu() {
-	printf "1. Hyprland\n"
-	printf "2. Kitty\n"
-	printf "3. Waybar\n"
-	printf "4. Startup\n"
-	printf "5. Kitty-Theme\n"
-	printf "6. Starship\n"
-	printf "7. Waybar-Style\n"
-	printf "8. Waybar-Modules\n"
-	printf "9. Ghostty\n"
-	printf "10. Rofi\n"
-	printf "11. Rofi-Edit\n"
-	printf "12. Zshrc\n"
-	printf "13. Mako\n"
+  printf "1. Hyprland\n"
+  printf "2. Kitty\n"
+  printf "3. Zshrc\n"
+  printf "4. Starship\n"
+  printf "5. Kitty-Theme\n"
+  printf "6. Waybar\n"
+  printf "7. Waybar-Style\n"
+  printf "8. Waybar-Modules\n"
+  printf "9. Ghostty\n"
+  printf "10. Rofi\n"
+  printf "11. Rofi-Edit\n"
+  printf "12. Startup\n"
+  # printf "13. Mako\n"
 }
 
 main() {
-	choice=$(menu | rofi -dmenu -theme ~/.config/hypr/rofi/config.rasi | cut -d. -f1)
+  choice=$(menu | rofi -dmenu -theme ~/.config/hypr/rofi/config.rasi | cut -d. -f1)
 
-	case $choice in
-	1)
-		$myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/hypr/hyprland.conf"
-		;;
-	2)
-		$myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/kitty/kitty.conf"
-		;;
-	3)
-		$myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/hypr/waybar/config"
-		;;
-	4)
-		$myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.local/bin/scripts/startup"
-		;;
-	5)
-		$myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/kitty/current-theme.conf"
-		;;
-	6)
-		$myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/starship/starship.toml"
-		;;
-	7)
-		$myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/hypr/waybar/style.css"
-		;;
-	8)
-		$myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/hypr/waybar/modules"
-		;;
-	9)
-		$myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/ghostty/config"
-		;;
-	10)
-		$myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/rofi/config.rasi"
-		;;
-	11)
-		$myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.local/bin/scripts/rofi-edit"
-		;;
-	12)
-		$myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.zshrc"
-		;;
-	13)
-		$myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/hypr/mako/config"
-		;;
+  case $choice in
+  1)
+    $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/hypr/hyprland.conf"
+    ;;
+  2)
+    $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/kitty/kitty.conf"
+    ;;
+  3)
+    $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.zshrc"
+    ;;
+  4)
+    $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/starship/starship.toml"
+    ;;
+  5)
+    $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/kitty/catppuccin-mocha-theme.conf"
+    ;;
+  6)
+    $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/hypr/waybar/config"
+    ;;
+  7)
+    $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/hypr/waybar/style.css"
+    ;;
+  8)
+    $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/hypr/waybar/modules"
+    ;;
+  9)
+    $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/ghostty/config"
+    ;;
+  10)
+    $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/rofi/config.rasi"
+    ;;
+  11)
+    $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.local/bin/scripts/rofi-edit"
+    ;;
+  12)
+    $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.local/bin/scripts/startup"
+    ;;
+  # 13)
+  #   $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/hypr/mako/config"
+  #   ;;
 
-	esac
+  esac
 }
 
 main

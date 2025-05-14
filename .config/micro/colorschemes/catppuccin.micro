@@ -1,4 +1,4 @@
-color-link comment "italic #6c7086"
+color-link comment "italic #7c82a3"
 
 color-link identifier "cyan"
 color-link identifier.class "cyan"
