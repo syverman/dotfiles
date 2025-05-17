@@ -4,7 +4,6 @@
     "autosave": 240,
     "colorscheme": "catppuccin",
     "diffgutter": true,
-    "filemanager.openonstart": true,
     "hlsearch": true,
     "lsp.autocompleteDetails": true,
     "lsp.ignoreMessages": "false",
