@@ -1,88 +1,146 @@
-//   _____ _____ _____ _____ _____ _____ _____ _____ _____ 
-//  |   __|  _  |   __|_   _|   __|   __|_   _|     |  |  |
-//  |   __|     |__   | | | |   __|   __| | | |   --|     |
-//  |__|  |__|__|_____| |_| |__|  |_____| |_| |_____|__|__|  GROUPS
-//
-//  by Bina
-
 {
     "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
     "logo": {
-    	"source": "Arch_small",
+    	// "source": "Arch_small",
+     //  	"padding": {
+     //        "top": 8,
+    	// 	"right": 9,
+    	// 	"left": 7
+      	"source": "~/.config/fastfetch/arch-2.webp",
+      	"type": "kitty",
+      	"height": 18,
+      	"width": 28,
       	"padding": {
-            "top": 4,
-    		"right": 7,
-    		"left": 6
-      	}
+      	    "top": 5,
+      	   "left": 1
+      	   }
     },
     "display": {
           "separator": " ➜  "
     },
     "modules": [
         "break",
-
-         {
-            "type": "os",
-            "key": "OS   ",
-            "keyColor": "31",  // = color1
+        {
+            "type": "custom",
+            "format":"┌──────────────────────Software──────────────────────┐",
+            "outputColor": "31"
+            },
+            {
+               "type": "os",
+               "key": "OS   ",
+               "keyColor": "31",
         },
         {
-            "type": "kernel",
-            "key": " ├  ",
-            "keyColor": "31",
+               "type": "kernel",
+               "key": " ├  ",
+               "keyColor": "31",
         },
         {
-            "type": "packages",
-            "format": "{} (pacman)",
-            "key": " └ 󰏖 ",
-            "keyColor": "31",  
+               "type": "packages",
+               "format": "{} (pacman)",
+               "key": " ├ 󰏖 ",
+               "keyColor": "31",  
+        },
+        // {
+        //         "type": "Bootmgr",
+        //         "key": " └ 󰛆 ",
+        //         "keyColor": "31"
+        // },
+        {
+               "type": "wm",
+               "key": "WM   ",
+               "keyColor": "31", 
+        },
+        {
+               "type": "wmtheme",
+               "key": " ├ 󰉼 ",
+               "keyColor": "31",
+        },
+        {
+               "type": "terminal",
+               "key": " ├  ",
+               "keyColor": "31",
+        },
+        {
+               "type": "shell",
+               "key": " └  ",
+               "keyColor": "31", 
+        },
+        {
+               "type": "custom",
+               "format": "└────────────────────────────────────────────────────┘",
+               "outputColor": "31"
         },
         "break",
         {
-            "type": "wm",
-            "key": "WM   ",
-            "keyColor": "32", 
-        },
-        {
-            "type": "wmtheme",
-            "key": " ├ 󰉼 ",
-            "keyColor": "32",
-        },
-        {
-            "type": "terminal",
-            "key": " ├  ",
-            "keyColor": "32",
-        },
-        {
-            "type": "shell",
-            "key": " └  ",
-            "keyColor": "32", 
-        },
-
-        "break",
-        {
-            "type": "cpu",
-            "format": "{1} ({3}) @ {7} GHz",
-            "key": " ├  ",
-            "keyColor": "33",
-        },
-        {
-            "type": "gpu",
-            "format": "{1} {2}",            
-            "key": " ├ 󰢮 ",
-            "keyColor": "33",
-        },
-        {
-            "type": "disk",
-            "key": " ├ 󰋊 ",
-            "keyColor": "33",
-        },
-        {
-            "type": "memory",
-            "key": " └  ",
-            "keyColor": "33",
-        },
-        "break",
+            "type": "custom",
+            "format": "┌──────────────────────Hardware──────────────────────┐",
+            "outputColor": "33"
+            },
+            {
+                "type": "host",
+                "key": "PC   ",
+                "keyColor": "33"
+            },
+            {
+                "type": "cpu",
+                "format": "{1} ({3}) @ {7} GHz",
+                "key": " ├  ",
+                "keyColor": "33",
+            },
+            {
+                "type": "gpu",
+                "format": "{1} {2}",            
+                "key": " ├ 󰢮 ",
+                "keyColor": "33",
+            },
+            {
+                "type": "disk",
+                "key": " ├ 󰋊 ",
+                "keyColor": "33",
+            },
+            {
+                "type": "memory",
+                "key": " └  ",
+                "keyColor": "33",
+            },
+            {
+                "type": "custom",
+                "format": "└────────────────────────────────────────────────────┘",
+                "outputColor": "33"
+            },
+            "break",
+            {
+                "type": "custom",
+                "format":"┌────────────────────Uptime / Age────────────────────┐",
+                "outputColor": "34"
+            },
+            {
+                "type": "command",
+                "key": " OS Age",
+                "keyColor": "34",
+                "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days"
+            },
+            {
+                "type": "uptime",
+                "key": " Uptime",
+                "keyColor": "34"
+            },
+            {
+                "type": "datetime",
+                "key": " Date  ",
+                "format": "{day-in-month}-{month-pretty}-{year}", // {hour-pretty}:{minute-pretty}",
+                "keyColor": "34"
+            },
+            {
+                "type": "custom",
+                "format": "└────────────────────────────────────────────────────┘",
+                "outputColor": "34",
+            },
+            {
+                "type": "custom",
+                "format": "               \u001b[90m  \u001b[31m  \u001b[32m  \u001b[33m  \u001b[34m  \u001b[35m  \u001b[36m  \u001b[37m "
+            },
+            "break",
     ]
 }
-
