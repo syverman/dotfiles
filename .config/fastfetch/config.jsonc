@@ -9,10 +9,11 @@
       	"source": "~/.config/fastfetch/arch-2.webp",
       	"type": "kitty",
       	"height": 18,
-      	"width": 28,
+      	"width": 26,
       	"padding": {
       	    "top": 5,
-      	   "left": 1
+      	   "left": 1,
+      	   "right": 1
       	   }
     },
     "display": {
@@ -117,18 +118,18 @@
             },
             {
                 "type": "command",
-                "key": " OS Age",
+                "key": "  OS Age",
                 "keyColor": "34",
                 "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days"
             },
             {
                 "type": "uptime",
-                "key": " Uptime",
+                "key": "  Uptime",
                 "keyColor": "34"
             },
             {
                 "type": "datetime",
-                "key": " Date  ",
+                "key": "  Date  ",
                 "format": "{day-in-month}-{month-pretty}-{year}", // {hour-pretty}:{minute-pretty}",
                 "keyColor": "34"
             },
