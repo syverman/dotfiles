@@ -75,7 +75,7 @@ truncation_symbol = "…/"
 # "dotfiles" = "󰲋  "
 
 [git_branch]
-symbol = ""
+symbol = " "
 style = "bg:yellow"
 format = '[[ $symbol $branch ](fg:crust bg:yellow)]($style)'
 
