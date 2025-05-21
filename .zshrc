@@ -42,6 +42,7 @@ zinit snippet OMZP::command-not-found
 
 # Load completions
 autoload -Uz compinit && compinit
+autoload -U colors && colors
 
 zinit cdreplay -q
 
@@ -49,6 +50,19 @@ zinit cdreplay -q
 bindkey -e
 bindkey '^p' history-search-backward
 bindkey '^n' history-search-forward
+bindkey '^a' beginning-of-line
+bindkey '^e' end-of-line
+bindkey '^f' forward-of-line
+bindkey '^b' backward-char
+bindkey '^d' delete-char-or-list # cierra ventana tambien
+bindkey '^k' kill-whole-line
+bindkey '^w' backward-kill-word
+
+
+
+
+
+
 
 # History
 HISTSIZE=5000
@@ -62,8 +76,13 @@ setopt hist_ignore_all_dups
 setopt hist_save_no_dups
 setopt hist_ignore_dups
 setopt hist_find_no_dups
+setopt autocd
+setopt auto_param_slash
+setopt interactive_comments
+stty stop undef
 
 # Completion styling
+# zstyle ':completion:*' menu select
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 zstyle ':completion:*' menu no
@@ -80,6 +99,7 @@ export COLORTERM=truecolor
 export MICRO_TRUECOLOR=1
 
 # Alias
+alias rm='trash-put'
 alias cl='clear'
 alias gc='git clone'
 alias lz='lazygit'
@@ -88,7 +108,7 @@ alias update='sudo pacman -Sy'
 alias upgrade='sudo pacman -Syu'
 alias install='sudo pacman -S'
 alias remove='sudo pacman -R'
- alias v='vim'
+alias v='vim'
 alias n='nvim'
 alias r='ranger'
 alias m='micro'
@@ -98,8 +118,6 @@ alias ll='lsd -l'
 alias lt='lsd -h --tree --depth 3'
 alias lta='lsd -ha --tree --depth 3'
 alias grep='grep --color=always'
-alias sozh='source .zshrc'
-alias sosh='source .bashrc'
 alias cat='bat'
 alias rate-mirrors='sudo rate-mirrors --disable-comments --top-mirrors-number-to-retest=5 --save /etc/pacman.d/mirrorlist --allow-root arch'
 alias ff='fastfetch'
@@ -114,6 +132,8 @@ alias buscar='micro $(fzf --preview="bat --color=always {}")'
 alias tobash='sudo chsh $USER -s /bin/bash && echo re-open terminal'
 alias tozsh='sudo chsh $USER -s /bin/zsh && echo re-open terminal'
 alias tofish='sudo chsh $USER -s /bin/fish && echo re-open terminal'
+alias sozh='source .zshrc'
+alias sosh='source .bashrc'
 
 # Shell integrations
 eval "$(fzf --zsh)"
