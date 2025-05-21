@@ -36,7 +36,7 @@
   #custom-power,
   #temperature,
   #custom-cycle_wall,
-  #custom-power_profile,
+  #power-profiles-daemon,
   #custom-formatted_date {
 	  background-color: #1e1e2e;
   }
@@ -131,7 +131,7 @@
   }
   
   #bluetooth {
-	  color: ;
+	  color: #cdd6f4;
   }
   
   #temperature {
@@ -145,11 +145,11 @@
 	  padding: 0px 8px 0px 12px;
   }
   
-  #custom-power_profile {
+  #power-profiles-daemon {
 	  color: #27e327;
 	  border-radius: 3px;
 	  margin: 2px 0px;
-	  padding: 0px 10px 0px 8px;
+	  padding: 0px 15px 0px 8px;
   }
   
   #custom-menu {
