@@ -16,8 +16,8 @@
 	<name>Open Terminal Here</name>
 	<submenu></submenu>
 	<unique-id>1488955845049151-1</unique-id>
-	<command>ghostty</command>
-	<description>Example for a custom action</description>
+	<command>kitty</command>
+	<description>Abrir Terminal</description>
 	<range></range>
 	<patterns>*</patterns>
 	<startup-notify/>
