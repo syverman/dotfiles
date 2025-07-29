@@ -58,12 +58,6 @@ bindkey '^d' delete-char-or-list # cierra ventana tambien
 bindkey '^k' kill-whole-line
 bindkey '^w' backward-kill-word
 
-
-
-
-
-
-
 # History
 HISTSIZE=5000
 HISTFILE=~/.zsh_history
@@ -113,7 +107,7 @@ alias n='nvim'
 alias r='ranger'
 alias m='micro'
 alias ls='lsd'
-alias la='lsd -a --oneline'
+alias la='lsd -a'
 alias ll='lsd -l'
 alias lt='lsd -h --tree --depth 3'
 alias lta='lsd -ha --tree --depth 3'
@@ -139,10 +133,10 @@ alias sosh='source .bashrc'
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 
-export FZF_DEFAULT_OPTS=" \
---color=bg+:#313244,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8 \
---color=fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc \
---color=marker:#f5e0dc,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8"
+# export FZF_DEFAULT_OPTS=" \
+# --color=bg+:#313244,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8 \
+# --color=fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc \
+# --color=marker:#f5e0dc,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8"
 
 
 # Created by `pipx` on 2023-08-08 21:51:31
@@ -158,4 +152,4 @@ function y() {
 	rm -f -- "$tmp"
 }
 
-source ~/.zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh
+# source ~/.zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh

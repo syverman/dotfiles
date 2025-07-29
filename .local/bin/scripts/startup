@@ -19,11 +19,12 @@ done
 
 # Set wallpaper
 # swaybg --output '*' --mode fill -i ${DIR}/${RANDOMPICS} &
+swww init &
 
 # Lauch notification daemon (mako)
 # ~/.local/bin/scripts/notifications &
 
-# exec swaync &
+exec swaync &
 
 # Lauch statusbar (waybar)
 # ~/.local/bin/scripts/statusbar &
