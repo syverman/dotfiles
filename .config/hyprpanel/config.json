@@ -51,7 +51,7 @@
   "menus.dashboard.powermenu.avatar.image": "/home/juancarlos/Imágenes/Jotace.jpg",
   "theme.bar.menus.menu.dashboard.profile.size": "10em",
   "menus.dashboard.shortcuts.left.shortcut1.icon": "",
-  "menus.dashboard.shortcuts.left.shortcut1.command": "thorium-browser",
+  "menus.dashboard.shortcuts.left.shortcut1.command": "google-chrome-stable",
   "menus.dashboard.shortcuts.left.shortcut1.tooltip": "Thorium",
   "menus.dashboard.shortcuts.left.shortcut2.icon": "󰄛",
   "menus.dashboard.shortcuts.left.shortcut2.command": "kitty",
