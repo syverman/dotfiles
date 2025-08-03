@@ -13,7 +13,7 @@
 </action>
 <action>
 	<icon>window-next</icon>
-	<name>Open Terminal Here</name>
+	<name>Abrir Terminal</name>
 	<submenu></submenu>
 	<unique-id>1488955845049151-1</unique-id>
 	<command>kitty</command>
@@ -25,10 +25,10 @@
 </action>
 <action>
 	<icon>folder-edit-sign-encrypt</icon>
-	<name>Open folder as root</name>
+	<name>Abrir como Root</name>
 	<submenu></submenu>
 	<unique-id>1493475601060449-3</unique-id>
-	<command>thunar admin: %d</command>
+	<command>thunar admin: %f</command>
 	<description></description>
 	<range></range>
 	<patterns>*</patterns>
@@ -36,7 +36,7 @@
 </action>
 <action>
 	<icon>story-editor</icon>
-	<name>Open in micro</name>
+	<name>Editar con Micro</name>
 	<submenu></submenu>
 	<unique-id>1691182030475283-1</unique-id>
 	<command>kitty -e micro %f</command>
