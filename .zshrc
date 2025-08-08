@@ -87,8 +87,8 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 export EDITOR=micro
 export VISUAL=micro 
 export BROWSER=thorium-browser
-export TERM=kitty
-# export TERM=ghostty
+# export TERM=kitty
+export TERM=ghostty
 export COLORTERM=truecolor
 export MICRO_TRUECOLOR=1
 
