@@ -28,7 +28,7 @@
 	<name>Abrir como Root</name>
 	<submenu></submenu>
 	<unique-id>1493475601060449-3</unique-id>
-	<command>thunar admin: %f</command>
+	<command>thunar admin:///%f</command>
 	<description></description>
 	<range></range>
 	<patterns>*</patterns>
