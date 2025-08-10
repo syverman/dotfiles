@@ -1,5 +1,5 @@
 xhost && clear
-fastfetch
+# fastfetch
 
 # Set the directory we want to store zinit and plugins
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
@@ -86,9 +86,9 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 # variables #
 export EDITOR=micro
 export VISUAL=micro 
-export BROWSER=thorium-browser
-# export TERM=kitty
-export TERM=ghostty
+export BROWSER=google-chrome-stable
+export TERM=kitty
+# export TERM=ghostty
 export COLORTERM=truecolor
 export MICRO_TRUECOLOR=1
 

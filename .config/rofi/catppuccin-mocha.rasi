@@ -6,9 +6,10 @@
     blue: #89b4fa;
     fg-col: #cdd6f4;
     fg-col2: #f38ba8;
+    fg-col3: #007a87;
     grey: #6c7086;
     width: 35%;
-    font: "JetBrainsMono Nerd Font 13";
+    font: "JetBrainsMono Nerd Font 13.5";
 }
 
 element-text, element-icon , mode-switcher {
@@ -17,10 +18,10 @@ element-text, element-icon , mode-switcher {
 }
 
 window {
-    height: 450px;
+    height: 490px;
     border: 2px;
     border-radius: 3px;    
-    border-color: @fg-col2;
+    border-color: @fg-col3;
     background-color: @bg-col;
     orientation: vertical;
     
@@ -78,7 +79,7 @@ element {
 }
 
 element-icon {
-    size: 26px;
+    size: 28px;
 }
 
 element selected {
