@@ -1,38 +1,36 @@
 #!/usr/bin/env bash
 
-exec-once = dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
-export PATH=$HOME/.local/bin:/usr/local/bin:/usr/bin:/bin
+## Autostart Programs
+DIR=/home/juancarlos/Imágenes/Walls/
+PICS=($(ls ${DIR}))
 
-# Wallpaper aleatorio (opcional)
-DIR="$HOME/Imágenes/Walls/"
-PICS=($(ls "$DIR"))
 RANDOMPICS=${PICS[ $RANDOM % ${#PICS[@]} ]}
 
-# Matar procesos viejos
+# Kill already running process
 _ps=(hyprpanel polkit-gnome)
 for _prs in "${_ps[@]}"; do
-	if pidof "${_prs}" >/dev/null; then
-		killall -9 "${_prs}"
+	if [[ `pidof ${_prs}` ]]; then
+		killall -9 ${_prs}
 	fi
 done
-
-# Agregar programas con sus flags
-~/.local/bin/scripts/touchpad-apagado &
-rog-control-center &
-swww-daemon &
-# evolution -t &
-# blueman-manager -t &   # Descomenta si quieres usarlo
-wl-clip-persist -c both &
-clipse -listen &
-steam -silent -forcedesktopscaling 1.2 &
 
 # Polkit agent
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
-# Setear wallpaper (descomenta si quieres activar)
-# /usr/bin/swaybg --output '*' --mode fill -i "$DIR/$RANDOMPICS" &
+# Set wallpaper
+# swaybg --output '*' --mode fill -i ${DIR}/${RANDOMPICS} &
 
-# Programas Hyprland
+
+# Lauch notification daemon (mako)
+# ~/.local/bin/scripts/notifications &
+
+# exec swaync &
+
+# Lauch statusbar (waybar)
+# ~/.local/bin/scripts/statusbar &
+
+# Auto inicio de programas
+# Using hypridle to start hyprlock 
 hypridle &
 hyprpanel &
 
