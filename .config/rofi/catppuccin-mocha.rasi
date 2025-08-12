@@ -19,8 +19,8 @@ element-text, element-icon , mode-switcher {
 
 window {
     height: 490px;
-    border: 2px;
-    border-radius: 3px;    
+    border: 1px;
+    border-radius: 0px;    
     border-color: @fg-col3;
     background-color: @bg-col;
     orientation: vertical;

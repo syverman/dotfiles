@@ -6,14 +6,15 @@
      //        "top": 8,
     	// 	"right": 9,
     	// 	"left": 7
-      	"source": "~/.config/fastfetch/arch-2.webp",
+      	// "source": "~/.config/fastfetch/CachyOS.png",
+      	"source": "~/.config/fastfetch/cachyos.webp",
       	"type": "kitty",
-      	"height": 18,
-      	"width": 26,
+      	"height": 22,
+      	"width": 30,
       	"padding": {
-      	    "top": 5,
-      	   "left": 1,
-      	   "right": 1
+      	    "top": 2,
+      	   "left": 0,
+      	   "right": 0
       	   }
     },
     "display": {
@@ -23,7 +24,7 @@
         "break",
         {
             "type": "custom",
-            "format":"┌──────────────────────Software──────────────────────┐",
+            "format":"┌────────────────────Software────────────────────┐",
             "outputColor": "31"
             },
             {
@@ -69,14 +70,14 @@
         },
         {
                "type": "custom",
-               "format": "└────────────────────────────────────────────────────┘",
+               "format": "└────────────────────────────────────────────────┘",
                "outputColor": "31"
         },
-        "break",
+        // "break",
         {
-            "type": "custom",
-            "format": "┌──────────────────────Hardware──────────────────────┐",
-            "outputColor": "33"
+                "type": "custom",
+                "format": "┌────────────────────Hardware────────────────────┐",
+                "outputColor": "33"
             },
             {
                 "type": "host",
@@ -107,13 +108,13 @@
             },
             {
                 "type": "custom",
-                "format": "└────────────────────────────────────────────────────┘",
+                "format": "└────────────────────────────────────────────────┘",
                 "outputColor": "33"
             },
-            "break",
+            // "break",
             {
                 "type": "custom",
-                "format":"┌────────────────────Uptime / Age────────────────────┐",
+                "format":"┌──────────────────Uptime / Age──────────────────┐",
                 "outputColor": "34"
             },
             {
@@ -130,18 +131,18 @@
             {
                 "type": "datetime",
                 "key": "  Date  ",
-                "format": "{day-in-month}-{month-pretty}-{year}", // {hour-pretty}:{minute-pretty}",
+                "format": "{day-in-month}-{month-pretty}-{year}", // {hour-pretty}:{minute-pretty}
                 "keyColor": "34"
             },
             {
                 "type": "custom",
-                "format": "└────────────────────────────────────────────────────┘",
+                "format": "└────────────────────────────────────────────────┘",
                 "outputColor": "34",
             },
             {
                 "type": "custom",
                 "format": "               \u001b[90m  \u001b[31m  \u001b[32m  \u001b[33m  \u001b[34m  \u001b[35m  \u001b[36m  \u001b[37m "
             },
-            "break",
+            // "break",
     ]
 }
