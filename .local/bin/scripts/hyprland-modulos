@@ -1,0 +1,71 @@
+#!/bin/bash
+
+# myTerm=ghostty
+myTerm=kitty
+myEdit=micro
+
+menu() {
+  printf "1. Animaciones\n"
+  printf "2. Binds\n"
+  printf "3. Decoraciones\n"
+  printf "4. Dwindle\n"
+  printf "5. General\n"
+  printf "6. Gestos\n"
+  printf "7. Inputs\n"
+  printf "8. Miscelaneos\n"
+  printf "9. Monitores\n"
+  printf "10. Opengl\n"
+  printf "11. Reglas\n"
+  printf "12. Inicio\n"
+  # printf "13. Mako\n"
+}
+
+main() {
+  choice=$(menu | rofi -dmenu -theme ~/.config/hypr/rofi/config.rasi | cut -d. -f1)
+
+  case $choice in
+  1)
+    hyprctl dispatch workspace 5 && $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/hypr/modules/animations.conf"
+    ;;
+  2)
+    hyprctl dispatch workspace 5 && $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/hypr/modules/binds.conf"
+    ;;
+  3)
+    hyprctl dispatch workspace 5 && $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/hypr/modules/decoration.conf"
+    ;;
+  4)
+    hyprctl dispatch workspace 5 && $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/hypr/modules/dwindle.conf"
+    ;;
+  5)
+    hyprctl dispatch workspace 5 && $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/hypr/modules/general.conf"
+    ;;
+  6)
+    hyprctl dispatch workspace 5 && $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/hypr/modules/gestures.conf"
+    ;;
+  7)
+    hyprctl dispatch workspace 5 && $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/hypr/modules/input.conf"
+    ;;
+  8)
+    hyprctl dispatch workspace 5 && $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/hypr/modules/misc.conf"
+    ;;
+  9)
+    hyprctl dispatch workspace 5 && $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/hypr/modules/monitors.conf"
+    ;;
+  10)
+    hyprctl dispatch workspace 5 && $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/hypr/modules/opnegl.conf"
+    ;;
+  11)
+    hyprctl dispatch workspace 5 && $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/hypr/modules/rules.conf"
+    ;;
+  12)
+    hyprctl dispatch workspace 5 && $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/hypr/modules/startup.conf"
+    ;;
+  # 13)
+  #   $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/hypr/mako/config"
+  #   ;;
+
+  esac
+}
+
+main
+

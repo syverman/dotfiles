@@ -9,7 +9,7 @@
     fg-col3: #007a87;
     fg-col4: #949cbb;
     grey: #6c7086;
-    width: 35%;
+    width: 32%;
     font: "JetBrainsMono Nerd Font 13.7";
 }
 
@@ -19,7 +19,7 @@ element-text, element-icon , mode-switcher {
 }
 
 window {
-    height: 510px;
+    height: 490px;
     border: 2px;
     border-radius: 6px;    
     border-color: @fg-col3;
@@ -67,8 +67,8 @@ entry {
 
 listview {
     border: 0px 0px 0px;
-    padding: 6px 0px 0px;
-    margin: 10px 0px 0px 20px;
+    padding: 4px 0px 0px;
+    margin: 8px 0px 0px 20px;
     columns: 1;
     lines: 6;
     background-color: @bg-col;
@@ -81,11 +81,11 @@ element {
     border-radius: 4px;
     spacing: 14px;
     margin: 0px 20px 0px 0px;
-    padding: 8px 0px 10px 20px;
+    padding: 8px 0px 6px 10px;
 }
 
 element-icon {
-    size: 32px;
+    size: 28px;
 }
 
 element selected {
