@@ -1,8 +1,4 @@
 {
-  "theme.font.name": "JetBrainsMonoNL Nerd Font Propo",
-  "theme.font.label": "JetBrainsMonoNL Nerd Font Propo Medium",
-  "theme.font.size": "0.91rem",
-  "theme.font.weight": 500,
   "tear": true,
   "menus.transition": "crossfade",
   "theme.bar.menus.enableShadow": true,

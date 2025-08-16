@@ -6,9 +6,10 @@
     blue: #89b4fa;
     fg-col: #cdd6f4;
     fg-col2: #f38ba8;
+    fg-col3: #007a87;
     grey: #6c7086;
     width: 35%;
-    font: "JetBrainsMono Nerd Font 14";
+    font: "JetBrainsMono Nerd Font 13.8";
 }
 
 element-text, element-icon , mode-switcher {
@@ -18,9 +19,9 @@ element-text, element-icon , mode-switcher {
 
 window {
     height: 380px;
-    border: 1px;
-    border-radius: 0px;    
-    border-color: @fg-col2;
+    border: 2px;
+    border-radius: 6px;    
+    border-color: @fg-col3;
     background-color: @bg-col;
     orientation: vertical;
     
@@ -43,10 +44,11 @@ button {
 entry {
     font: "Inter Regular 12";
     background-color: @bg-col;
-    text-color: #8f8ca1;
+    text-color: #949cbb;
     expand: true;
     vertical-align: 0.5;
     horizontal-align: 0;
+    placeholder:"Buscar..";
 }
 
 entry-wrapper {

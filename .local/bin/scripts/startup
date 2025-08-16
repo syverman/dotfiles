@@ -36,4 +36,6 @@ hyprpanel &
 
 # EasyEffects modo daemon (systray)
 easyeffects --gapplication-service &
-ferdium  &
+zapzap  &
+
+
