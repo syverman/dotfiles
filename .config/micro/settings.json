@@ -2,7 +2,7 @@
     "aspell.check": "off",
     "aspell.lang": "us",
     "autosave": 240,
-    "colorscheme": "catppuccin",
+    "colorscheme": "everforest",
     "diffgutter": true,
     "hlsearch": true,
     "lsp.autocompleteDetails": true,

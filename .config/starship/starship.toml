@@ -28,10 +28,11 @@ $cmd_duration\
 $line_break\
 $character"""
 
-palette = 'catppuccin_mocha'
+# palette = 'catppuccin_mocha'
+palette = 'everforest'
 
 [os]
-disabled = true
+disabled = false
 style = "bg:surface0 fg:text"
 
 [os.symbols]
@@ -50,6 +51,7 @@ Amazon = ""
 Android = ""
 Arch = "󰣇"
 Artix = "󰣇"
+CachyOS = "󰈸"
 CentOS = ""
 Debian = "󰣚"
 Redhat = "󱄛"
@@ -193,3 +195,31 @@ surface0 = "#313244"
 base = "#1e1e2e"
 mantle = "#181825"
 crust = "#11111b"
+
+[palettes.everforest]
+rosewater = "#f2bfd8"
+flamingo = "#edd5d5"
+pink = "#f5c2e7"
+mauve = "#d699b6"
+red = "#514045"
+maroon = "#eba0ac"
+peach = "#e69875"
+yellow = "#dbbc7f"
+green = "#8ca665"
+teal = "#94e2d5"
+sky = "#83c092"
+sapphire = "#5ac7bc"
+blue = "#7fbbb3"
+lavender = "#85d4c9"
+text = "#aeb5b0"
+subtext1 = "#bac2de"
+subtext0 = "#a6adc8"
+overlay2 = "#9399b2"
+overlay1 = "#7f849c"
+overlay0 = "#6c7086"
+surface2 = "#585b70"
+surface1 = "#45475a"
+surface0 = "#3d484d"
+base = "#1e1e2e"
+mantle = "#181825"
+crust = "#232a2e"

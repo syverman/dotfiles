@@ -1,2 +1,6 @@
+# [flavor]
+# dark = "catppuccin-mocha"
+# [flavor]
+# dark = "everforest-dark-hard"
 [flavor]
-dark = "catppuccin-mocha"
+dark = "everforest-medium"
