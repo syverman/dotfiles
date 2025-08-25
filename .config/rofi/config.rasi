@@ -1,7 +1,7 @@
 configuration{
-    modi: "run,window,combi";
+    modi: "run,window,combi,emoji";
     show-icons: true;
-    matching: "fuzzy";
+    matching: "normal";
     terminal: "kitty";
     click-to-exit: true;
     drun-display-format: "{icon} {name}";
@@ -11,6 +11,7 @@ configuration{
     display-combi: " 🖥️  All ";
     display-run: " 🏃  Run ";
     display-window: " 🪟  Window";
+    display-emoji: "😀 Emoji";
     sidebar-mode: false;
 }
 

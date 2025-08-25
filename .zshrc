@@ -94,6 +94,8 @@ export MICRO_TRUECOLOR=1
 
 # Alias
 alias rm='trash-put'
+alias cd..='cd ..'
+alias cd.='cd .'
 alias cl='clear'
 alias gc='git clone'
 alias lz='lazygit'
@@ -102,6 +104,7 @@ alias update='sudo pacman -Sy'
 alias upgrade='sudo pacman -Syu'
 alias install='sudo pacman -S'
 alias remove='sudo pacman -R'
+alias edit='sudo micro'
 alias v='vim'
 alias n='nvim'
 alias m='micro'
