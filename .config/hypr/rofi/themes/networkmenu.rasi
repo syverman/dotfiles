@@ -5,7 +5,7 @@ configuration {
     scroll-method: 0;
     monitor: "primary";
 }
-@theme "catppuccin-mocha"
+@theme "themes/Everforest"
 
 window {
     location: center;

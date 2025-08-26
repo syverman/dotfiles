@@ -15,4 +15,4 @@ configuration{
     sidebar-mode: false;
 }
 
-@theme "catppuccin-mocha"
+@theme "themes/Everforest"

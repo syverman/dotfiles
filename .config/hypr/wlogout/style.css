@@ -16,14 +16,14 @@ button {
 	background-color: rgba(30,30,46,0.45);
     color: #FFFFFF;
 	border: 0px solid #282838;
-	border-radius: 15px;
+	border-radius: 6px;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 30%;
 }
 
 button:focus {
-	background-color: #45475a;
+	background-color: #2e383c;
 	outline-style: none;
 }
 
@@ -32,7 +32,7 @@ button:active {
     outline-style: none;
 } 
 button:hover{
-    background-color: #eba0ac;
+    background-color: #e67e80;
     outline-style: none;
 }
  

@@ -12,7 +12,7 @@
     fg-col4: #728188;
     grey: #6c7086;
     width: 32%;
-    font: "JetBrainsMono Nerd Font 13.7";
+    font: "JetBrainsMono Nerd Font 26";
 }
 
 element-text, element-icon , mode-switcher {
@@ -22,13 +22,12 @@ element-text, element-icon , mode-switcher {
 
 window {
     transparency: "real";
-    height: 490px;
+    height: 480px;
     border: 2px;
-    border-radius: 4px;    
+    border-radius: 1px;    
     border-color: @fg-col3;
     background-color: @bg-col;
     orientation: vertical;
-    
 }
 
 prompt {
@@ -38,7 +37,6 @@ prompt {
 mainbox {
     background-color: transparent;
 }
-
 
 inputbar {
     children: [prompt,entry];
@@ -55,79 +53,39 @@ prompt {
     margin: 20px 0px 0px 20px;
 }
 
-textbox-prompt-colon {
-    expand: false;
-    str: ":";
-}
 
 entry {
     padding: 8px;
     margin: 18px 22px 0px 22px;
     text-color: @fg-col4;
     background-color: @bg-col0;
-    placeholder:"Buscar..";
+    placeholder:"Buscar emoji..";
+    font: "JetBrainsMono Nerd Font 13.7";
 }
 
 listview {
-    border: 0px 0px 0px;
-    padding: 4px 0px 0px;
-    margin: 8px 0px 0px 20px;
-    columns: 1;
-    lines: 6;
+    padding: 0px;
+    margin: 4px 0px 0px 10px;
+    columns: 4;
+    lines: 4;
     background-color: @bg-col0;
 }
 
 element {
     padding: 5px;
     background-color: @bg-col0;
-    text-color: @fg-col;
+    text-color: @bg-col0;
     border-radius: 5px;
-    spacing: 12px;
-    margin: 0px 20px 0px 0px;
-    padding: 8px 0px 6px 10px;
-    background-color: transparent;
-}
-
-element-icon {
-    size: 28px;
+    spacing: 10px;
+    margin: 15px;
+    padding: 10px;
     background-color: transparent;
 }
 
 element selected {
     background-color: @bg-col2;
-    text-color: @fg-col2;
+    text-color: @bg-col0;
     border: 0px;
     border-color: @fg-col3;
     border-radius: 5px;
-}
-
-mode-switcher {
-    spacing: 0;
-  }
-
-button {
-    padding: 10px;
-    background-color: @bg-col-light;
-    text-color: @grey;
-    vertical-align: 0.5; 
-    horizontal-align: 0.5;
-}
-
-button selected {
-  background-color: @bg-col;
-  text-color: @blue;
-}
-
-message {
-    background-color: @bg-col-light;
-    margin: 2px;
-    padding: 2px;
-    border-radius: 4px;
-}
-
-textbox {
-    padding: 6px;
-    margin: 20px 0px 0px 20px;
-    text-color: @blue;
-    background-color: @bg-col-light;
 }

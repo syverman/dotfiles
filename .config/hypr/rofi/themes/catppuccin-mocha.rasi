@@ -8,7 +8,7 @@
     fg-col2: #f38ba8;
     fg-col3: #007a87;
     grey: #6c7086;
-    width: 35%;
+    width: 32%;
     font: "JetBrainsMono Nerd Font 13.8";
 }
 
@@ -20,7 +20,7 @@ element-text, element-icon , mode-switcher {
 window {
     height: 380px;
     border: 2px;
-    border-radius: 6px;    
+    border-radius: 1px;    
     border-color: @fg-col3;
     background-color: @bg-col;
     orientation: vertical;
@@ -119,7 +119,7 @@ element {
     border-radius: 6px;
     spacing: 14px;
     margin: 0px 20px 0px 0px;
-    padding: 8px 0px 10px 20px;
+    padding: 8px 0px 10px 10px;
 }
 
 element-icon {
