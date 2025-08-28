@@ -38,4 +38,6 @@ hyprpanel &
 easyeffects --gapplication-service &
 zapzap  &
 
+# Email
+mailspring --password-store="gnome-libsecret" &
 
