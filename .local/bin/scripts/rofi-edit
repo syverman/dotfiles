@@ -25,40 +25,40 @@ main() {
 
   case $choice in
   1)
-    hyprctl dispatch workspace 5 && $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/hypr/hyprland.conf"
+    $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/hypr/hyprland.conf"
     ;;
   2)
-    hyprctl dispatch workspace 5 && $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/kitty/kitty.conf"
+    $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/kitty/kitty.conf"
     ;;
   3)
-    hyprctl dispatch workspace 5 && $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.zshrc"
+    $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.zshrc"
     ;;
   4)
-    hyprctl dispatch workspace 5 && $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/starship/starship.toml"
+    $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/starship/starship.toml"
     ;;
   5)
-    hyprctl dispatch workspace 5 && $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/kitty/catppuccin-mocha-theme.conf"
+    $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/kitty/catppuccin-mocha-theme.conf"
     ;;
   6)
-    hyprctl dispatch workspace 5 && $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/hypr/waybar/config"
+    $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/hypr/waybar/config"
     ;;
   7)
-    hyprctl dispatch workspace 5 && $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/hypr/waybar/style.css"
+    $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/hypr/waybar/style.css"
     ;;
   8)
-    hyprctl dispatch workspace 5 && $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/hypr/waybar/modules"
+    $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/hypr/waybar/modules"
     ;;
   9)
-    hyprctl dispatch workspace 5 && $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/ghostty/config"
+    $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/ghostty/config"
     ;;
   10)
-    hyprctl dispatch workspace 5 && $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/rofi/config.rasi"
+    $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/rofi/config.rasi"
     ;;
   11)
-    hyprctl dispatch workspace 5 && $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.local/bin/scripts/rofi-edit"
+    $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.local/bin/scripts/rofi-edit"
     ;;
   12)
-    hyprctl dispatch workspace 5 && $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.local/bin/scripts/startup"
+    $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.local/bin/scripts/startup"
     ;;
   # 13)
   #   $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/hypr/mako/config"

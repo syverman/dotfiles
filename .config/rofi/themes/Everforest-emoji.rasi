@@ -24,7 +24,7 @@ window {
     transparency: "real";
     height: 480px;
     border: 2px;
-    border-radius: 1px;    
+    border-radius: 6px;    
     border-color: @fg-col3;
     background-color: @bg-col;
     orientation: vertical;

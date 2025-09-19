@@ -25,40 +25,40 @@ main() {
 
   case $choice in
   1)
-    hyprctl dispatch workspace 5 && $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/hypr/modules/animations.conf"
+    $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/hypr/modules/animations.conf"
     ;;
   2)
-    hyprctl dispatch workspace 5 && $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/hypr/modules/binds.conf"
+    $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/hypr/modules/binds.conf"
     ;;
   3)
-    hyprctl dispatch workspace 5 && $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/hypr/modules/decoration.conf"
+    $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/hypr/modules/decoration.conf"
     ;;
   4)
-    hyprctl dispatch workspace 5 && $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/hypr/modules/dwindle.conf"
+    $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/hypr/modules/dwindle.conf"
     ;;
   5)
-    hyprctl dispatch workspace 5 && $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/hypr/modules/general.conf"
+    $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/hypr/modules/general.conf"
     ;;
   6)
-    hyprctl dispatch workspace 5 && $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/hypr/modules/gestures.conf"
+    $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/hypr/modules/gestures.conf"
     ;;
   7)
-    hyprctl dispatch workspace 5 && $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/hypr/modules/input.conf"
+    $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/hypr/modules/input.conf"
     ;;
   8)
-    hyprctl dispatch workspace 5 && $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/hypr/modules/misc.conf"
+    $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/hypr/modules/misc.conf"
     ;;
   9)
-    hyprctl dispatch workspace 5 && $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/hypr/modules/monitors.conf"
+    $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/hypr/modules/monitors.conf"
     ;;
   10)
-    hyprctl dispatch workspace 5 && $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/hypr/modules/opnegl.conf"
+    $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/hypr/modules/opnegl.conf"
     ;;
   11)
-    hyprctl dispatch workspace 5 && $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/hypr/modules/rules.conf"
+    $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/hypr/modules/rules.conf"
     ;;
   12)
-    hyprctl dispatch workspace 5 && $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/hypr/modules/startup.conf"
+    $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/hypr/modules/startup.conf"
     ;;
   # 13)
   #   $myTerm -e sh -c "sleep 0.2 ; $myEdit $HOME/.config/hypr/mako/config"
