@@ -33,6 +33,7 @@ done
 # Using hypridle to start hyprlock 
 hypridle &
 hyprpanel &
+swww-daemon &
 
 # EasyEffects modo daemon (systray)
 easyeffects --gapplication-service &
