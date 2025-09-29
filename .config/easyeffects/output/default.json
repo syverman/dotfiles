@@ -230,7 +230,7 @@
             "input-gain": -2.3,
             "lookahead": 4.0,
             "mode": "Herm Thin",
-            "output-gain": 1.0,
+            "output-gain": 1.4,
             "oversampling": "Half x4(3L)",
             "release": 8.0,
             "sidechain-preamp": 0.0,

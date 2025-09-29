@@ -31,8 +31,8 @@ done
 
 # Auto inicio de programas
 # Using hypridle to start hyprlock 
-hypridle &
 hyprpanel &
+hypridle &
 swww-daemon &
 
 # EasyEffects modo daemon (systray)
