@@ -2,7 +2,7 @@
 <actions>
 <action>
 	<icon>view-preview</icon>
-	<name>Aplicar como fondo de Pantalla</name>
+	<name>Usar como Fondo</name>
 	<submenu></submenu>
 	<unique-id>1710890103539353-1</unique-id>
 	<command>swaybg -i %f -m fill</command>
@@ -13,7 +13,7 @@
 </action>
 <action>
 	<icon>window-next</icon>
-	<name>Abrir Terminal</name>
+	<name>Abrir en Terminal</name>
 	<submenu></submenu>
 	<unique-id>1488955845049151-1</unique-id>
 	<command>kitty</command>
@@ -25,7 +25,7 @@
 </action>
 <action>
 	<icon>folder-edit-sign-encrypt</icon>
-	<name>Abrir como Root</name>
+	<name>Abrir como Administrador</name>
 	<submenu></submenu>
 	<unique-id>1493475601060449-3</unique-id>
 	<command>thunar admin:///%f</command>
@@ -47,7 +47,7 @@
 </action>
 <action>
 	<icon>debug-run</icon>
-	<name>Make executable</name>
+	<name>Hacer Executable</name>
 	<submenu></submenu>
 	<unique-id>1526670239648084-2</unique-id>
 	<command>chmod +x %f</command>
@@ -59,11 +59,11 @@
 </action>
 <action>
 	<icon>gksu-root-terminal</icon>
-	<name>Ownership to root</name>
+	<name>Dueño Administrador</name>
 	<submenu></submenu>
 	<unique-id>1526631155250282-8</unique-id>
 	<command>gnome-keyring-daemon -r -d;gksu &quot;chown -R root:root %F&quot;</command>
-	<description>Change permissions to root</description>
+	<description></description>
 	<range></range>
 	<patterns>*</patterns>
 	<directories/>
@@ -75,11 +75,11 @@
 </action>
 <action>
 	<icon>im-user-online</icon>
-	<name>Ownership to user</name>
+	<name>Dueño Usuario</name>
 	<submenu></submenu>
 	<unique-id>1526631178674034-9</unique-id>
 	<command>gnome-keyring-daemon -r -d;gksu &quot;chown -R $USER:$USER %F&quot;</command>
-	<description>Change permissions to user</description>
+	<description></description>
 	<range></range>
 	<patterns>*</patterns>
 	<directories/>
@@ -91,7 +91,7 @@
 </action>
 <action>
 	<icon>archive-extract</icon>
-	<name>Extract here</name>
+	<name>Extraer Aqui</name>
 	<submenu></submenu>
 	<unique-id>1489091300385082-4</unique-id>
 	<command>tar xjf %n</command>
@@ -102,22 +102,22 @@
 </action>
 <action>
 	<icon>edit-image-face-recognize</icon>
-	<name>Convert png to jpg</name>
+	<name>Convertir png a jpg</name>
 	<submenu></submenu>
 	<unique-id>1510662686010963-1</unique-id>
 	<command>convert %f -quality 90 `basename %f .png`.jpg</command>
-	<description>Convert png to jpg</description>
+	<description></description>
 	<range></range>
 	<patterns>*.png</patterns>
 	<image-files/>
 </action>
 <action>
 	<icon>insert-link-symbolic</icon>
-	<name>Create symlink</name>
+	<name>Crear un Enlace</name>
 	<submenu></submenu>
 	<unique-id>1526631663081446-14</unique-id>
 	<command>ln -s  %f &quot;%n&quot;</command>
-	<description>Softlink between two files or directories</description>
+	<description></description>
 	<range></range>
 	<patterns>*</patterns>
 	<directories/>

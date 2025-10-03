@@ -29,7 +29,9 @@ $line_break\
 $character"""
 
 # palette = 'catppuccin_mocha'
-palette = 'everforest'
+# palette = 'everforest'
+palette = 'pure'
+
 
 [os]
 disabled = false
@@ -223,3 +225,31 @@ surface0 = "#3d484d"
 base = "#1e1e2e"
 mantle = "#181825"
 crust = "#232a2e"
+
+[palettes.pure]
+rosewater = "#f5e0dc"
+flamingo = "#f2cdcd"
+pink = "#f5c2e7"
+mauve = "#cba6f7"
+red = "#f38ba8"
+maroon = "#eba0ac"
+peach = "#d08770"
+yellow = "#d9ba7c"
+green = "#b4d498"
+teal = "#94e2d5"
+sky = "#89dceb"
+sapphire = "#88c0d0"
+blue = "#89b4fa"
+lavender = "#81a1c1"
+text = "#e5e9f0"
+subtext1 = "#bac2de"
+subtext0 = "#a6adc8"
+overlay2 = "#9399b2"
+overlay1 = "#7f849c"
+overlay0 = "#6c7086"
+surface2 = "#585b70"
+surface1 = "#45475a"
+surface0 = "#252a33"
+base = "#1e1e2e"
+mantle = "#181825"
+crust = "#11111b"

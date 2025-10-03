@@ -2,5 +2,7 @@
 # dark = "catppuccin-mocha"
 # [flavor]
 # dark = "everforest-dark-hard"
+# [flavor]
+# dark = "everforest-medium"
 [flavor]
-dark = "everforest-medium"
+dark = "nord"
