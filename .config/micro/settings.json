@@ -2,7 +2,7 @@
     "aspell.check": "off",
     "aspell.lang": "us",
     "autosave": 240,
-    "colorscheme": "everforest",
+    "colorscheme": "pure",
     "diffgutter": true,
     "hlsearch": true,
     "lsp.autocompleteDetails": true,
