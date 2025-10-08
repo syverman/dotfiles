@@ -7,19 +7,19 @@ clipboard-write = allow
 copy-on-select = true
 keybind = performable:ctrl+c=copy_to_clipboard
 keybind = ctrl+v=paste_from_clipboard
-window-width = 155
-window-height = 35
+# window-width = 155
+# window-height = 35
 window-padding-x = 4
 window-padding-y = 2
 resize-overlay = never
 window-theme = system
-theme =Everforest Dark Hard
+theme =One Half Dark
 mouse-hide-while-typing = true
 mouse-scroll-multiplier = 2
 focus-follows-mouse = true
 window-step-resize = true
 window-save-state = always
 window-padding-balance = false
-keybind = ctrl+a>right=new_split:right
-keybind = ctrl+a>down=new_split:down
+keybind = F7=new_split:right
+keybind = F8=new_split:down
 
